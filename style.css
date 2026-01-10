@@ -187,3 +187,11 @@ footer {
     z-index: -10;
     background: #101; /* optional */
 }
+
+.lang-switcher button {
+    margin-left: 6px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
