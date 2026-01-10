@@ -94,4 +94,8 @@ function checkIfCentered() {
 // Run on scroll
 window.addEventListener("scroll", checkIfCentered);
 
+document.addEventListener("keydown", e => {
+    if (e.key === "Escape") closeProject();
+});
+
 

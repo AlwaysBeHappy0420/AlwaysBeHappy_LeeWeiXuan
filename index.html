@@ -49,15 +49,15 @@
 		
         <h2 data-key="projects_title">Projects</h2>
         <div class="project-grid">
-            <div class="project-card">
+            <button class="project-card" onclick="openProject('divine')">
                 <h3 data-key="project1_title">Project One</h3>
                 <p data-key="project1_desc">A brief description of this project.</p>
-            </div>
+            </button>
 
-            <div class="project-card">
+            <button class="project-card" onclick="openProject('platformer')">
                 <h3 data-key="project2_title">Project Two</h3>
                 <p data-key="project2_desc">A brief description of this project.</p>
-            </div>	
+            </button>	
         </div>
     </section>
 
@@ -78,7 +78,23 @@
 	<img id="leftwheel" src="wheel.png" alt="Wheel">
 	<img id="rightwheel" src="wheel.png" alt="Wheel">
 
-    
+    <div id="projectOverlay" class="project-overlay">
+    <h2 id="overlayTitle">Project Title</h2>
+
+    <div class="overlay-content">
+        <img id="overlayImage" src="" alt="">
+        <p id="overlayDesc"></p>
+
+        <p><strong>Tools:</strong> <span id="overlayTools"></span></p>
+
+        <div class="overlay-buttons">
+            <a id="overlayLink" target="_blank">View Project</a>
+            <button onclick="closeProject()">Close</button>
+        </div>
+    </div>
+</div>
+
+
 <script>
 const wheel = document.getElementById("leftwheel");
 const wheel2 = document.getElementById("rightwheel");
@@ -177,6 +193,41 @@ function setLanguage(lang) {
 const savedLang = localStorage.getItem("language") || "en";
 setLanguage(savedLang);
 
+
+const projects = {
+    divine: {
+        title: "Divine Descent",
+        desc: "A 2D puzzle platformer where death creates a corpse that becomes part of the level design.",
+        tools: "Unity, C#, FMOD",
+        image: "divine.jpg",
+        link: "https://yourlink.com"
+    },
+    platformer: {
+        title: "Corpse Puzzle Platformer",
+        desc: "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.",
+        tools: "Unity, C#, Aseprite",
+        image: "platformer.jpg",
+        link: "https://yourlink.com"
+    }
+};
+
+function openProject(key) {
+    const p = projects[key];
+
+    document.getElementById("overlayTitle").innerText = p.title;
+    document.getElementById("overlayDesc").innerText = p.desc;
+    document.getElementById("overlayTools").innerText = p.tools;
+    document.getElementById("overlayImage").src = p.image;
+    document.getElementById("overlayLink").href = p.link;
+
+    document.getElementById("projectOverlay").classList.add("active");
+    document.body.style.overflow = "hidden";
+}
+
+function closeProject() {
+    document.getElementById("projectOverlay").classList.remove("active");
+    document.body.style.overflow = "auto";
+}
 </script>
 
 	
