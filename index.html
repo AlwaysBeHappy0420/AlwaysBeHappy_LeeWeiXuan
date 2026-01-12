@@ -21,9 +21,6 @@
                     <button onclick="setLanguage('jp')">日本語</button>
                     </div>
                 </li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -64,10 +61,11 @@
     <!-- Contact Section -->
     <section id="contact" class="section reveal">
         <h2 data-key="contact_title">Contact</h2>
-		<p>Email: leeweixuan9@gmail.com</p>
+		<p>Email: <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new">leeweixuan9@gmail.com</a></p>
 		<br>
 		<p>Numbers: +60 17-837 4593</p>
 		<br>
+        <p>Github: <a href="https://github.com/AlwaysBeHappy0420"> https://github.com/AlwaysBeHappy0420</a></p>
 		
     </section>
 
@@ -75,8 +73,8 @@
         <p>© 2025 LeeWeiXuan. All rights reserved.</p>
     </footer>
 	
-	<img id="leftwheel" src="wheel.png" alt="Wheel">
-	<img id="rightwheel" src="wheel.png" alt="Wheel">
+	<!--<img id="leftwheel" src="wheel.png" alt="Wheel">-->
+	<!--<img id="rightwheel" src="wheel.png" alt="Wheel">-->
 
     <div id="projectOverlay" class="project-overlay">
     <h2 id="overlayTitle">Project Title</h2>
@@ -98,57 +96,35 @@
 
 
 <script>
-const wheel = document.getElementById("leftwheel");
-const wheel2 = document.getElementById("rightwheel");
-const HoverEffect = document.getElementById("HoverEffect");
 
-// Wheel rotation
-window.addEventListener("scroll", () => {
-    const rotation = window.scrollY * 0.3; 
-    wheel.style.transform = `rotate(${rotation}deg)`;
-    wheel2.style.transform = `rotate(${-rotation}deg)`;
-
-    // Text highlight effect
-    const elements = document.querySelectorAll(".section h2"); // All section headings
-	const secondElements = document.querySelectorAll(".section p");
-    const viewportCenter = window.innerHeight / 2.5;
-
-    elements.forEach(el => {
-        const rect = el.getBoundingClientRect();
-        const elementCenter = rect.top + rect.height / 2;
-        const offset = 80; // tolerance in px
-
-        if (elementCenter >= viewportCenter - offset && elementCenter <= viewportCenter + offset) {
-            el.classList.add("highlight");
-        } else {
-            el.classList.remove("highlight");
-        }
-    });
-	
-	    secondElements.forEach(el => {
-        const rect = el.getBoundingClientRect();
-        const elementCenter = rect.top + rect.height / 2;
-		        const offset = 80; // tolerance in px
-
-        if (elementCenter >= viewportCenter - offset && elementCenter <= viewportCenter + offset) {
-            el.classList.add("Wordshighlight");
-        } else {
-            el.classList.remove("Wordshighlight");
-        }
-    });
-});
+const projects = {
+    divine: {
+        title: "Divine Descent",
+        desc: "A 2D puzzle platformer where death creates a corpse that becomes part of the level design.",
+        tools: "Unity, C#, FMOD",
+        image: "divine.jpg",
+        link: "https://yourlink.com"
+    },
+    platformer: {
+        title: "Corpse Puzzle Platformer",
+        desc: "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.",
+        tools: "Unity, C#, Aseprite",
+        image: "platformer.jpg",
+        link: "https://yourlink.com"
+    }
+};
 
 const translations = {
     en: {
         hero_title: "Hello, This is <span>Lee Wei Xuan</span>",
-        hero_desc: "I create games, interactive experiences, and websites.",
+        hero_desc: "I am a game developer, and you’ve come to the right place if you’re looking for a strong and reliable one.",
         view_work: "View My Work",
         about_title: "About Me",
-        about_desc: "I am a developer who loves creating unique and engaging experiences. I specialize in Unity, game design, and web development.",
+        about_desc: "I'm a game developer. ",
         projects_title: "Projects",
-        project1_title: "Project One",
+        project1_title: "AXERAS",
         project1_desc: "A brief description of this project.",
-        project2_title: "Project Two",
+        project2_title: "Virtual Escape",
         project2_desc: "A brief description of this project.",
         contact_title: "Contact"
     },
@@ -191,27 +167,68 @@ function setLanguage(lang) {
     localStorage.setItem("language", lang);
 }
 
+function checkIfCentered() {
+const textElement = document.querySelector("#myText");
+    const rect = textElement.getBoundingClientRect();
+    const viewportHeight = window.innerHeight;
+
+    // Calculate the vertical center of the viewport
+    const viewportCenter = viewportHeight / 2;
+
+    // Calculate the vertical center of the element
+    const elementCenter = rect.top + rect.height / 2;
+
+    // Check if element center is within a certain range of viewport center
+    const offset = 50; // tolerance in pixels
+    
+	if (elementCenter >= viewportCenter - offset && elementCenter <= viewportCenter + offset) {
+    element.classList.add("highlight");
+	} else {
+    element.classList.remove("highlight");
+}
+}
+
+
 // Load saved language
 const savedLang = localStorage.getItem("language") || "en";
 setLanguage(savedLang);
 
+const HoverEffect = document.getElementById("HoverEffect");
+// Wheel rotation
+window.addEventListener("scroll", () => {
+    //checkIfCentered();
 
-const projects = {
-    divine: {
-        title: "Divine Descent",
-        desc: "A 2D puzzle platformer where death creates a corpse that becomes part of the level design.",
-        tools: "Unity, C#, FMOD",
-        image: "divine.jpg",
-        link: "https://yourlink.com"
-    },
-    platformer: {
-        title: "Corpse Puzzle Platformer",
-        desc: "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.",
-        tools: "Unity, C#, Aseprite",
-        image: "platformer.jpg",
-        link: "https://yourlink.com"
-    }
-};
+    // Text highlight effect
+    const elements = document.querySelectorAll(".section h2"); // All section headings
+	const secondElements = document.querySelectorAll(".section p");
+    const viewportCenter = window.innerHeight / 2.5;
+
+    elements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        const elementCenter = rect.top + rect.height / 2;
+        const offset = 80; // tolerance in px
+
+        if (elementCenter >= viewportCenter - offset && elementCenter <= viewportCenter + offset) {
+            el.classList.add("highlight");
+        } else {
+            el.classList.remove("highlight");
+        }
+    });
+	
+	    secondElements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        const elementCenter = rect.top + rect.height / 2;
+		        const offset = 80; // tolerance in px
+
+        if (elementCenter >= viewportCenter - offset && elementCenter <= viewportCenter + offset) {
+            el.classList.add("Wordshighlight");
+        } else {
+            el.classList.remove("Wordshighlight");
+        }
+    });
+});
+
+
 
 function openProject(key) {
     const p = projects[key];
@@ -230,6 +247,8 @@ function closeProject() {
     document.getElementById("projectOverlay").classList.remove("active");
     document.body.style.overflow = "auto";
 }
+
+
 </script>
 
 	
