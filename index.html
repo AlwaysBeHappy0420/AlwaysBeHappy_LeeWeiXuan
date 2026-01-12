@@ -1,257 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
-</head>
+    <script defer src = "sciptLanguage.js"></script>
+  </head>
 
-<body>
+  <body>
     <!-- Navigation -->
     <header>
-        <nav class="navbar">
-            <h1 class="logo">Lee Wei Xuan</h1>
-            <ul class="nav-links">
-                <li>
-                    <div class="lang-switcher">
-                    <button onclick="setLanguage('en')">EN</button>
-                    <button onclick="setLanguage('zh')">中文</button>
-                    <button onclick="setLanguage('jp')">日本語</button>
-                    </div>
-                </li>
-            </ul>
-        </nav>
+      <nav class="navbar">
+        <h1 class="logo">Lee Wei Xuan</h1>
+        <ul class="nav-links">
+          <li>
+            <div class="lang-switcher">
+              <button onclick="setLanguage('en')">EN</button>
+              <button onclick="setLanguage('zh')">中文</button>
+              <button onclick="setLanguage('jp')">日本語</button>
+            </div>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <h2 data-key="hero_title">Hello, This is <span>Lee Wei Xuan</span></h2>
-        <p data-key="hero_desc">I create games, interactive experiences, and websites.</p>
-        <a href="#projects" class="btn" data-key="view_work">View My Work</a>
+      <h2 data-key="hero_title">Hello, This is <span>Lee Wei Xuan</span></h2>
+      <p data-key="hero_desc">
+        I create games, interactive experiences, and websites.
+      </p>
+      <a href="#projects" class="btn" data-key="view_work">View My Work</a>
     </section>
 
     <!-- About Section -->
     <section id="about" class="section reveal">
-        <h2 id="HoverEffect" data-key="about_title">About Me</h2>
-        <p data-key="about_desc">
-            I am a developer who loves creating unique and engaging experiences.
-            I specialize in Unity, game design, and web development.
-        </p>
+      <h2 id="HoverEffect" data-key="about_title">About Me</h2>
+      <p data-key="about_desc">
+        I am a developer who loves creating unique and engaging experiences. I
+        specialize in Unity, game design, and web development.
+      </p>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="section reveal">
-		
-        <h2 data-key="projects_title">Projects</h2>
-        <div class="project-grid">
-            <button class="project-card" onclick="openProject('divine')">
-                <h3 data-key="project1_title">Project One</h3>
-                <p data-key="project1_desc">A brief description of this project.</p>
-            </button>
+      <h2 data-key="projects_title">Projects</h2>
+      <div class="project-grid">
+        <button class="project-card" onclick="openProject('AXERAS')">
+          <h3 data-key="project1_title">Project One</h3>
+          <p data-key="project1_desc">A brief description of this project.</p>
+        </button>
 
-            <button class="project-card" onclick="openProject('platformer')">
-                <h3 data-key="project2_title">Project Two</h3>
-                <p data-key="project2_desc">A brief description of this project.</p>
-            </button>	
-        </div>
+        <button class="project-card" onclick="openProject('VirtualEscape')">
+          <h3 data-key="project2_title">Project Two</h3>
+          <p data-key="project2_desc">A brief description of this project.</p>
+        </button>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="section reveal">
-        <h2 data-key="contact_title">Contact</h2>
-		<p>Email: <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new">leeweixuan9@gmail.com</a></p>
-		<br>
-		<p>Numbers: +60 17-837 4593</p>
-		<br>
-        <p>Github: <a href="https://github.com/AlwaysBeHappy0420"> https://github.com/AlwaysBeHappy0420</a></p>
-		
+      <h2 data-key="contact_title">Contact</h2>
+      <p>
+        Email:
+        <a
+          href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new"
+          target="_blank"
+          >leeweixuan9@gmail.com</a
+        >
+      </p>
+      <br />
+      <p>Numbers: +60 17-837 4593</p>
+      <br />
+      <p>
+        Github:
+        <a href="https://github.com/AlwaysBeHappy0420" target="_blank">
+          https://github.com/AlwaysBeHappy0420</a
+        >
+      </p>
     </section>
 
-	<footer>
-        <p>© 2025 LeeWeiXuan. All rights reserved.</p>
+    <footer>
+      <p>© 2025 LeeWeiXuan. All rights reserved.</p>
     </footer>
-	
-	<!--<img id="leftwheel" src="wheel.png" alt="Wheel">-->
-	<!--<img id="rightwheel" src="wheel.png" alt="Wheel">-->
+
+    <!--<img id="leftwheel" src="wheel.png" alt="Wheel">-->
+    <!--<img id="rightwheel" src="wheel.png" alt="Wheel">-->
 
     <div id="projectOverlay" class="project-overlay">
-    <h2 id="overlayTitle">Project Title</h2>
+      <h2 id="overlayTitle">Project Title</h2>
 
-    <div class="overlay-content">
-        <img id="overlayImage" src="" alt="">
-        <p id="overlayDesc"></p>
+      <div class="overlay-content">
+        <img id="overlayImage" src="" alt="" />
+        <p id="overlayDesc" data-key="project_desc"></p>
 
         <p><strong>Tools:</strong> <span id="overlayTools"></span></p>
 
         <div class="overlay-buttons">
-            <a id="overlayLink" target="_blank">View Project</a>
-            <button onclick="closeProject()">Close</button>
+          <button onclick="closeProject()">Close</button>
         </div>
+      </div>
     </div>
-</div>
 
-<!--<a href="Resume_LeeWeiXuan_2025.pdf" target="_blank" rel="noopener noreferrer">View or Download PDF Document</a>-->
+    <!--<a href="Resume_LeeWeiXuan_2025.pdf" target="_blank" rel="noopener noreferrer">View or Download PDF Document</a>-->
 
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        setLanguage("en");
+      });
+      // Wheel rotation
+      window.addEventListener("scroll", () => {
+        //checkIfCentered();
 
-<script>
+        // Text highlight effect
+        const elements = document.querySelectorAll(".section h2"); // All section headings
+        const secondElements = document.querySelectorAll(".section p");
+        const viewportCenter = window.innerHeight / 2.5;
 
-const projects = {
-    divine: {
-        title: "Divine Descent",
-        desc: "A 2D puzzle platformer where death creates a corpse that becomes part of the level design.",
-        tools: "Unity, C#, FMOD",
-        image: "divine.jpg",
-        link: "https://yourlink.com"
-    },
-    platformer: {
-        title: "Corpse Puzzle Platformer",
-        desc: "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.",
-        tools: "Unity, C#, Aseprite",
-        image: "platformer.jpg",
-        link: "https://yourlink.com"
-    }
-};
+        elements.forEach((el) => {
+          const rect = el.getBoundingClientRect();
+          const elementCenter = rect.top + rect.height / 2;
+          const offset = 80; // tolerance in px
 
-const translations = {
-    en: {
-        hero_title: "Hello, This is <span>Lee Wei Xuan</span>",
-        hero_desc: "I am a game developer, and you’ve come to the right place if you’re looking for a strong and reliable one.",
-        view_work: "View My Work",
-        about_title: "About Me",
-        about_desc: "I'm a game developer. ",
-        projects_title: "Projects",
-        project1_title: "AXERAS",
-        project1_desc: "A brief description of this project.",
-        project2_title: "Virtual Escape",
-        project2_desc: "A brief description of this project.",
-        contact_title: "Contact"
-    },
-
-    zh: {
-        hero_title: "你好，我是 <span>李伟轩</span>",
-        hero_desc: "我制作游戏、互动体验与网站。",
-        view_work: "查看我的作品",
-        about_title: "关于我",
-        about_desc: "我是一名热爱创造独特且有趣体验的开发者，专注于 Unity、游戏设计与网页开发。",
-        projects_title: "项目",
-        project1_title: "项目一",
-        project1_desc: "这是该项目的简要说明。",
-        project2_title: "项目二",
-        project2_desc: "这是该项目的简要说明。",
-        contact_title: "联系我"
-    },
-
-    jp: {
-        hero_title: "こんにちは、<span>Lee Wei Xuan</span> です",
-        hero_desc: "ゲーム、インタラクティブ体験、ウェブサイトを制作しています。",
-        view_work: "作品を見る",
-        about_title: "自己紹介",
-        about_desc: "私はユニークで魅力的な体験を作ることが好きな開発者です。Unity、ゲームデザイン、Web開発を専門としています。",
-        projects_title: "プロジェクト",
-        project1_title: "プロジェクト1",
-        project1_desc: "このプロジェクトの簡単な説明。",
-        project2_title: "プロジェクト2",
-        project2_desc: "このプロジェクトの簡単な説明。",
-        contact_title: "連絡先"
-    }
-};
-
-function setLanguage(lang) {
-    document.querySelectorAll("[data-key]").forEach(el => {
-        const key = el.getAttribute("data-key");
-        el.innerHTML = translations[lang][key];
-    });
-
-    localStorage.setItem("language", lang);
-}
-
-function checkIfCentered() {
-const textElement = document.querySelector("#myText");
-    const rect = textElement.getBoundingClientRect();
-    const viewportHeight = window.innerHeight;
-
-    // Calculate the vertical center of the viewport
-    const viewportCenter = viewportHeight / 2;
-
-    // Calculate the vertical center of the element
-    const elementCenter = rect.top + rect.height / 2;
-
-    // Check if element center is within a certain range of viewport center
-    const offset = 50; // tolerance in pixels
-    
-	if (elementCenter >= viewportCenter - offset && elementCenter <= viewportCenter + offset) {
-    element.classList.add("highlight");
-	} else {
-    element.classList.remove("highlight");
-}
-}
-
-
-// Load saved language
-const savedLang = localStorage.getItem("language") || "en";
-setLanguage(savedLang);
-
-const HoverEffect = document.getElementById("HoverEffect");
-// Wheel rotation
-window.addEventListener("scroll", () => {
-    //checkIfCentered();
-
-    // Text highlight effect
-    const elements = document.querySelectorAll(".section h2"); // All section headings
-	const secondElements = document.querySelectorAll(".section p");
-    const viewportCenter = window.innerHeight / 2.5;
-
-    elements.forEach(el => {
-        const rect = el.getBoundingClientRect();
-        const elementCenter = rect.top + rect.height / 2;
-        const offset = 80; // tolerance in px
-
-        if (elementCenter >= viewportCenter - offset && elementCenter <= viewportCenter + offset) {
+          if (
+            elementCenter >= viewportCenter - offset &&
+            elementCenter <= viewportCenter + offset
+          ) {
             el.classList.add("highlight");
-        } else {
+          } else {
             el.classList.remove("highlight");
-        }
-    });
-	
-	    secondElements.forEach(el => {
-        const rect = el.getBoundingClientRect();
-        const elementCenter = rect.top + rect.height / 2;
-		        const offset = 80; // tolerance in px
+          }
+        });
 
-        if (elementCenter >= viewportCenter - offset && elementCenter <= viewportCenter + offset) {
+        secondElements.forEach((el) => {
+          const rect = el.getBoundingClientRect();
+          const elementCenter = rect.top + rect.height / 2;
+          const offset = 80; // tolerance in px
+
+          if (
+            elementCenter >= viewportCenter - offset &&
+            elementCenter <= viewportCenter + offset
+          ) {
             el.classList.add("Wordshighlight");
-        } else {
+          } else {
             el.classList.remove("Wordshighlight");
+          }
+        });
+      });
+
+      function setLanguage(lang) {
+        document.querySelectorAll("[data-key]").forEach((el) => {
+          const key = el.getAttribute("data-key");
+          el.innerHTML = translations[lang][key];
+        });
+
+        localStorage.setItem("language", lang);
+        savedLang = lang;
+      }
+
+      function checkIfCentered() {
+        const textElement = document.querySelector("#myText");
+        const rect = textElement.getBoundingClientRect();
+        const viewportHeight = window.innerHeight;
+
+        // Calculate the vertical center of the viewport
+        const viewportCenter = viewportHeight / 2;
+
+        // Calculate the vertical center of the element
+        const elementCenter = rect.top + rect.height / 2;
+
+        // Check if element center is within a certain range of viewport center
+        const offset = 50; // tolerance in pixels
+
+        if (
+          elementCenter >= viewportCenter - offset &&
+          elementCenter <= viewportCenter + offset
+        ) {
+          element.classList.add("highlight");
+        } else {
+          element.classList.remove("highlight");
         }
-    });
-});
+      }
 
+      function openProject(key) {
+        let p = projectLanguage[savedLang][key];
+        document.getElementById("overlayTitle").innerText = p.title;
+        document.getElementById("overlayDesc").innerText = p.desc;
+        document.getElementById("overlayTools").innerText = p.tools;
+        document.getElementById("overlayImage").src = p.image;
 
+        document.getElementById("projectOverlay").classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
 
-function openProject(key) {
-    const p = projects[key];
-
-    document.getElementById("overlayTitle").innerText = p.title;
-    document.getElementById("overlayDesc").innerText = p.desc;
-    document.getElementById("overlayTools").innerText = p.tools;
-    document.getElementById("overlayImage").src = p.image;
-    document.getElementById("overlayLink").href = p.link;
-
-    document.getElementById("projectOverlay").classList.add("active");
-    document.body.style.overflow = "hidden";
-}
-
-function closeProject() {
-    document.getElementById("projectOverlay").classList.remove("active");
-    document.body.style.overflow = "auto";
-}
-
-
-</script>
-
-	
-</body>
+      function closeProject() {
+        document.getElementById("projectOverlay").classList.remove("active");
+        document.body.style.overflow = "auto";
+      }
+    </script>
+  </body>
 </html>
-

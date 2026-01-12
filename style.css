@@ -82,11 +82,10 @@ header {
     border-radius: 20px;
     font-size: 18px;
     font-weight: bold;
-    transition: 0.5s ease;
 }
 
 .btn:hover {
-    background: #000000;
+    background: #ff0000;
 }
 
 
