@@ -6,7 +6,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
-    <script defer src = "sciptLanguage.js"></script>
+    <script defer src="sciptLanguage.js"></script>
   </head>
 
   <body>
@@ -16,7 +16,9 @@
         <h1 class="logo">Lee Wei Xuan</h1>
         <ul class="nav-links">
           <li>
+
             <div class="lang-switcher">
+              <button id="mainBtn" data-key="info">Info</button>
               <button onclick="setLanguage('en')">EN</button>
               <button onclick="setLanguage('zh')">中文</button>
               <button onclick="setLanguage('jp')">日本語</button>
@@ -64,7 +66,7 @@
     <section id="contact" class="section reveal">
       <h2 data-key="contact_title">Contact</h2>
       <p>
-        Email:
+        Email :
         <a
           href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new"
           target="_blank"
@@ -72,7 +74,7 @@
         >
       </p>
       <br />
-      <p>Numbers: +60 17-837 4593</p>
+      <p>Mobile: (+60)17-8374593</p>
       <br />
       <p>
         Github:
@@ -85,9 +87,6 @@
     <footer>
       <p>© 2025 LeeWeiXuan. All rights reserved.</p>
     </footer>
-
-    <!--<img id="leftwheel" src="wheel.png" alt="Wheel">-->
-    <!--<img id="rightwheel" src="wheel.png" alt="Wheel">-->
 
     <div id="projectOverlay" class="project-overlay">
       <h2 id="overlayTitle">Project Title</h2>
@@ -104,101 +103,16 @@
       </div>
     </div>
 
-    <!--<a href="Resume_LeeWeiXuan_2025.pdf" target="_blank" rel="noopener noreferrer">View or Download PDF Document</a>-->
+    <div class="options" id="optionsBox">
+      <button onclick="window.open('PDFs/Resume_LeeWeiXuan_2025.pdf', '_blank')">Resume</button>
+      <button onclick="window.open('PDFs/Rerekisho_LeeWeiXuan_2025.pdf', '_blank')">履歴書</button>
+      <button onclick="window.open('PDFs/ShokumuKeirekiSho_LeeWeiXuan_2025.pdf', '_blank')">職務経歴書</button>
+    </div>
+
 
     <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        setLanguage("en");
-      });
-      // Wheel rotation
-      window.addEventListener("scroll", () => {
-        //checkIfCentered();
 
-        // Text highlight effect
-        const elements = document.querySelectorAll(".section h2"); // All section headings
-        const secondElements = document.querySelectorAll(".section p");
-        const viewportCenter = window.innerHeight / 2.5;
-
-        elements.forEach((el) => {
-          const rect = el.getBoundingClientRect();
-          const elementCenter = rect.top + rect.height / 2;
-          const offset = 80; // tolerance in px
-
-          if (
-            elementCenter >= viewportCenter - offset &&
-            elementCenter <= viewportCenter + offset
-          ) {
-            el.classList.add("highlight");
-          } else {
-            el.classList.remove("highlight");
-          }
-        });
-
-        secondElements.forEach((el) => {
-          const rect = el.getBoundingClientRect();
-          const elementCenter = rect.top + rect.height / 2;
-          const offset = 80; // tolerance in px
-
-          if (
-            elementCenter >= viewportCenter - offset &&
-            elementCenter <= viewportCenter + offset
-          ) {
-            el.classList.add("Wordshighlight");
-          } else {
-            el.classList.remove("Wordshighlight");
-          }
-        });
-      });
-
-      function setLanguage(lang) {
-        document.querySelectorAll("[data-key]").forEach((el) => {
-          const key = el.getAttribute("data-key");
-          el.innerHTML = translations[lang][key];
-        });
-
-        localStorage.setItem("language", lang);
-        savedLang = lang;
-      }
-
-      function checkIfCentered() {
-        const textElement = document.querySelector("#myText");
-        const rect = textElement.getBoundingClientRect();
-        const viewportHeight = window.innerHeight;
-
-        // Calculate the vertical center of the viewport
-        const viewportCenter = viewportHeight / 2;
-
-        // Calculate the vertical center of the element
-        const elementCenter = rect.top + rect.height / 2;
-
-        // Check if element center is within a certain range of viewport center
-        const offset = 50; // tolerance in pixels
-
-        if (
-          elementCenter >= viewportCenter - offset &&
-          elementCenter <= viewportCenter + offset
-        ) {
-          element.classList.add("highlight");
-        } else {
-          element.classList.remove("highlight");
-        }
-      }
-
-      function openProject(key) {
-        let p = projectLanguage[savedLang][key];
-        document.getElementById("overlayTitle").innerText = p.title;
-        document.getElementById("overlayDesc").innerText = p.desc;
-        document.getElementById("overlayTools").innerText = p.tools;
-        document.getElementById("overlayImage").src = p.image;
-
-        document.getElementById("projectOverlay").classList.add("active");
-        document.body.style.overflow = "hidden";
-      }
-
-      function closeProject() {
-        document.getElementById("projectOverlay").classList.remove("active");
-        document.body.style.overflow = "auto";
-      }
     </script>
+    <!--<a href="PDFs/Resume_LeeWeiXuan_2025.pdf" target="_blank" rel="noopener noreferrer">View or Download PDF Document</a>-->
   </body>
 </html>

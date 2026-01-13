@@ -38,6 +38,13 @@ header {
     text-decoration: none;
 }
 
+header button{
+    padding: 24px 25px;
+    border-radius: 20px;
+    font-size: 16px;
+
+    
+}
 
 
 /* Hero Section */
@@ -230,3 +237,38 @@ body.overlay-open main {
     filter: blur(8px);
 }
 
+
+
+.options {
+  position: fixed;
+  top: 60px;              /* adjust position */
+  right: 150px;
+  width: 220px;
+  background: #111;
+  color: white;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+
+  opacity: 0;
+  transform: scale(0.9) translateY(-10px);
+  pointer-events: none;
+  transition: 0.25s ease;
+
+  z-index: 1000; /* higher than everything */
+}
+
+.options.show {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  pointer-events: auto;
+}
+
+.options button {
+  width: 100%;
+  margin: 6px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
