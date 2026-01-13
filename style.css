@@ -1,14 +1,16 @@
 /* Reset */
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto Condensed','Chiron GoRound TC';
 }
 
 
 /* Navbar */
 header {
-    font-family: 'Times New Roman';
     background: #000000;  
     padding: 15px 40px;
 }
@@ -56,7 +58,6 @@ button
 
 
     font-size: 20px;
-    font-family: 'Times New Roman';
     color: white;
     display: inline-block;
 }
@@ -88,7 +89,6 @@ header img {
 
 /* Hero Section */
 .hero {
-    font-family: 'Times New Roman';
     height: 75vh;
     background: linear-gradient(135deg, #707070, #000000);
     color: white;
@@ -101,7 +101,6 @@ header img {
 }
 
 .hero h2 {
-    font-family: 'Times New Roman';
     font-size: 45px;
     margin-bottom: 10px;
 }
@@ -139,7 +138,6 @@ header img {
 /* Sections */
 .section {
     text-align: justify;
-    font-family: 'Times New Roman';
     word-spacing: normal;
     padding: 80px 40px;
     max-width: 1200px;
@@ -148,7 +146,6 @@ header img {
 }
 
 .section h2 {   
-    font-family: 'Times New Roman';
     text-align: justify;
     font-size: 32px;
     margin-bottom: 20px;
