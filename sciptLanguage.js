@@ -54,15 +54,39 @@ const translations = {
     view_work: "View My Work",
     about_title: "About Me",
     about_desc: 
-    "I'm Lee Wei Xuan, and as you can see this is my personal website being done with Github. It's open source, feel free to have the template.<br><br>"
-    + 
-    "I own a degree for <a href=\"https://study.utar.edu.my/game-development.php\" target=\"_blank\">Bachelor of Science(Honour) Game Development</a>, Universiti Tunku Abdul Rahman in Selangor Malaysia, "
-    +
-    "graduating with CGPA around 3.15.<br><br>"
-    +
-    "I'm looking for any chance that can make a better me, which always includes learning new things, communicating with experienced seniors, watching the development of the other games to know the techniques and knowledge, etc."
-    +
-    "I do have a strong mind that support me to work well under pressure"
+    "I'm Lee Wei Xuan, and this is my <b>personal website</b> hosted on GitHub. It’s <a href=\"https://github.com/AlwaysBeHappy0420/AlwaysBeHappy_LeeWeiXuan\" target=\"_blank\">open source</a>, so feel free to use the template.<br>"
+    +"Holding <a href=\"https://study.utar.edu.my/game-development.php\" target=\"_blank\">Bachelor of Science(Honours) Game Development</a><b>(CPGA 3.2 out of 4)</b> from Universiti Tunku Abdul Rahman in Selangor, Malaysia.<br><br>"
+    +"<h3>Working Experiences:</h3><br>"
+    +"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+    +"- <i>Worked in industry as an intern from June2025 to Oct2025</i>"
+    + "<br><br>"
+    
+    +"<h3>These describe me well:</h3> "
+    +"<b><h3>Skillsets:</h3></b><br>"
+    +"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+    +"・I love <b>Unity</b>, experienced in 2D/3D C# Coding, including <b>Shader Programming, Profiling, Debugging, Optimization, Networking</b>.<br>"
+    +"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+    +"・I love <b>Unreal</b> as well, not that much compared to Unity, but have experiences with <b>Blueprint</b> & <b>C/C++</b>.<br>"
+    +"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+    +"・I <b>make websites</b>. Not very detailed, but enough to show what I want to show. Using languages like: <b>JavaScript, HTML, CSS, php, MySQL...</b><br>"
+    +"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+    +"・I love & hate <b>Dev Logging</b>. Don't get me wrong. I'm good at concluding things. It just takes me a lot of time.<br>"
+    +"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+    +"・<b>Communicating</b> is a skill. TBH, I'm not good at this because of most of the time I would prefer solve it by myself first, and in the end I can solve it by myself.<br>"
+    +"<br>"
+
+    +"&nbsp;&nbsp;&nbsp;&nbsp;"
+    +"<b><h3>Mindsets:</h3></b><br>"
+    +"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+    +"・I do <b>enjoy the process of developing a game</b>, since it always gives me a sense \"Someone is actually using/playing what I have done\", and I enjoy it so much.<br>"
+    +"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+    +"・A hot take from me: &nbsp;&nbsp;<b><i>If one is describable, one is scriptable.</i></b><br>"
+    +"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+    +"・I am <b>curious in new things</b> which leads me to know more about the world.<br>"
+    +"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+    +"・I would <b>like to know \"why\" behind every question</b> and task which leads me to have high understanding of the item.<br>"
+    +"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+    +"・I can <b>work well under pressure</b>, and I'm <b>concious of time.</b><br>"
     ,
     projects_title: "Projects",
     project1_title: "AXERAS",

@@ -192,11 +192,11 @@ header img {
 
 .highlight {
     transform: scale(1.1);
-    color: #ff0000;
+    color: #116cff;
     transition: all 0.3s ease;
 }
 .Wordshighlight {
-    color: #4903fc;
+    color: #352165;
     transition: all 0.3s ease;
 }
 
