@@ -54,7 +54,7 @@ const translations = {
     view_work: "View My Work",
     about_title: "About Me",
     about_desc: 
-    "I'm Lee Wei Xuan, and as you can see this is my personal website.<br><br>"
+    "I'm Lee Wei Xuan, and as you can see this is my personal website being done with Github. It's open source, feel free to have the template.<br><br>"
     + 
     "I own a degree for <a href=\"https://study.utar.edu.my/game-development.php\" target=\"_blank\">Bachelor of Science(Honour) Game Development</a>, Universiti Tunku Abdul Rahman in Selangor Malaysia, "
     +
@@ -62,7 +62,7 @@ const translations = {
     +
     "I'm looking for any chance that can make a better me, which always includes learning new things, communicating with experienced seniors, watching the development of the other games to know the techniques and knowledge, etc."
     +
-    ""
+    "I do have a strong mind that support me to work well under pressure"
     ,
     projects_title: "Projects",
     project1_title: "AXERAS",
