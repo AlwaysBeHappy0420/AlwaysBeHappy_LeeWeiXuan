@@ -15,15 +15,16 @@
       <nav class="navbar">
         <h1 class="logo">Lee Wei Xuan</h1>
         <ul class="nav-links">
-          <li>
-
-            <div class="lang-switcher">
-              <button id="mainBtn" data-key="info">Info</button>
-              <button onclick="setLanguage('en')">EN</button>
-              <button onclick="setLanguage('zh')">中文</button>
-              <button onclick="setLanguage('jp')">日本語</button>
-            </div>
-          </li>
+          <div class="lang-switcher">
+            <button class="mainBtn" id="mainBtn" data-key="info">Info</button>
+            <button>
+              <img
+                id="languageIcon"
+                class="languageIcon"
+                src="Images/languageIcon.png"
+              />
+            </button>
+          </div>
         </ul>
       </nav>
     </header>
@@ -104,15 +105,27 @@
     </div>
 
     <div class="options" id="optionsBox">
-      <button onclick="window.open('PDFs/Resume_LeeWeiXuan_2025.pdf', '_blank')">Resume</button>
-      <button onclick="window.open('PDFs/Rerekisho_LeeWeiXuan_2025.pdf', '_blank')">履歴書</button>
-      <button onclick="window.open('PDFs/ShokumuKeirekiSho_LeeWeiXuan_2025.pdf', '_blank')">職務経歴書</button>
+      <button
+        onclick="window.open('PDFs/Resume_LeeWeiXuan_2025.pdf', '_blank')"
+      >
+        Resume / CV
+      </button>
+      <button
+        onclick="window.open('PDFs/Rerekisho_LeeWeiXuan_2025.pdf', '_blank')"
+      >
+        履歴書
+      </button>
+      <button
+        onclick="window.open('PDFs/ShokumuKeirekiSho_LeeWeiXuan_2025.pdf', '_blank')"
+      >
+        職務経歴書
+      </button>
     </div>
 
-
-    <script>
-
-    </script>
-    <!--<a href="PDFs/Resume_LeeWeiXuan_2025.pdf" target="_blank" rel="noopener noreferrer">View or Download PDF Document</a>-->
+    <div class="options" id="languageOptionBox">
+      <button onclick="setLanguage('en')">EN</button>
+      <button onclick="setLanguage('zh')">中文</button>
+      <button onclick="setLanguage('jp')">日本語</button>
+    </div>
   </body>
 </html>

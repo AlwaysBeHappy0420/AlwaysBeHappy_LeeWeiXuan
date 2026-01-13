@@ -38,12 +38,16 @@ header {
     text-decoration: none;
 }
 
-header button{
+.mainBtn {
     padding: 24px 25px;
     border-radius: 20px;
     font-size: 16px;
+}
 
-    
+header img {
+    width: 25px;   /* sets the icon width */
+    height: 25px;  /* sets the icon height */
+    object-fit: contain; /* keeps proportions without stretching */
 }
 
 
@@ -242,7 +246,7 @@ body.overlay-open main {
 .options {
   position: fixed;
   top: 60px;              /* adjust position */
-  right: 150px;
+  right: 10px;
   width: 220px;
   background: #111;
   color: white;

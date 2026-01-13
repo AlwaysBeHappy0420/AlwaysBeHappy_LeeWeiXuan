@@ -69,12 +69,10 @@ function checkIfCentered() {
   }
 }
 
-function togglePanel() {
-  optionBox.classList.toggle("show");
-}
-
 const cards = document.querySelectorAll(".project-card");
 const mainBtn = document.getElementById("mainBtn");
+const languageIcon = document.getElementById("languageIcon");
+const languageOptionBox = document.getElementById("languageOptionBox");
 const optionBox = document.getElementById("optionsBox");
 const textElement = document.querySelector("#myText");
 
@@ -102,16 +100,42 @@ document.addEventListener("DOMContentLoaded", () => {
   setLanguage("en");
 });
 
-mainBtn.addEventListener("click", togglePanel);
+
+
+mainBtn.addEventListener("click", () => {
+  optionBox.classList.toggle("show");
+  if(languageOptionBox.classList.contains("show")) languageOptionBox.classList.toggle("show");
+});
+languageIcon.addEventListener("click", () => {
+  languageOptionBox.classList.toggle("show");
+  if(optionBox.classList.contains("show")) optionBox.classList.toggle("show");
+});
+
+
 
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("scroll", checkIfCentered);
 window.addEventListener("load", revealOnScroll);
 
+// window.addEventListener("click", (event) => {
+//   // If click is outside both the optionBox and its toggle button
+//   if (!optionBox.contains(event.target) && 
+//       optionBox.classList.contains("show")) {
+//     optionBox.classList.remove("show");
+//   }
+  
+//   // If click is outside both the languageOptionBox and its toggle button
+//   if (!languageOptionBox.contains(event.target) && 
+//       languageOptionBox.classList.contains("show")) {
+//     languageOptionBox.classList.remove("show");
+//   }
+// });
+
+
 window.addEventListener("scroll", () => {
-  if (optionBox.classList.contains("show")) {
-    togglePanel();
-  }
+  if(optionBox.classList.contains("show")) optionBox.classList.toggle("show");
+  if(languageOptionBox.classList.contains("show")) languageOptionBox.classList.toggle("show");
+
   // Text highlight effect
   const elements = document.querySelectorAll(".section h2"); // All section headings
   const secondElements = document.querySelectorAll(".section p");
