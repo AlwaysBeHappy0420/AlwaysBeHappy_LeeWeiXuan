@@ -70,6 +70,7 @@ const translations = {
       "・<b>Communicating</b> is a skill. TBH, I'm not good at this because of most of the time I would prefer solve it by myself first, and in the end I can solve it by myself.<br><br>" +
       "・Learned <b>Japanese(N1). Native in English, Chinese(Simplified/Traditional), Malay, Hakka, Cantonese, some Hokkien.</b><br><br><br>",
     about_desc4:
+      "<b><h4>Mindset:</h4></b><br>" +
       '・I do <b>enjoy the process of developing a game</b>, since it always gives me a sense "Someone is actually using/playing what I have done", and I enjoy it so much.<br><br>' +
       "・A hot take from me: &nbsp;&nbsp;<b><i>If one is describable, one is scriptable.</i></b><br><br>" +
       "・I am <b>curious in new things</b> which leads me to know more about the world.<br><br>" +
@@ -107,7 +108,7 @@ const translations = {
       "・不擅长与人进行口头表达上的<b>沟通</b>，但文字表达上相对流畅。<br><br>" +
       "・获得<b>日语(N1)准证. 母语为英文，中文（简体/繁体），马来文，客家语，粤语，一部分福建话（闽南语）</b><br><br>",
     about_desc4:
-      "<b><h4>思想:</h4></b><br>" +
+      "<b><h4>个人思想:</h4></b><br>" +
       "・享受 <b>开发游戏的过程</b>， 因为它总能给我提供一种成就感。<br><br>" +
       "・个人口头禅： &nbsp;&nbsp;<b><i>如果一样事情可以被描述，那么它就可以被程序编写。</i></b><br><br>" +
       "・抱有 <b>对新事物的好奇心</b>，因其总能让我认识新的世界。<br><br>" +
