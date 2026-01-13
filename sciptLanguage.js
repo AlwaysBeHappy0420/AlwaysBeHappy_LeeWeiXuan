@@ -47,7 +47,7 @@ const projectLanguage = {
 
 const translations = {
   en: {
-    info :"Personal Info",
+    info :"My Info",
     hero_title: "Hello, This is <span>Lee Wei Xuan</span>",
     hero_desc:
       "I am a game developer, and you’ve come to the right place if you’re looking for a strong and reliable one.",
