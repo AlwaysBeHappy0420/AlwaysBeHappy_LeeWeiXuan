@@ -340,6 +340,10 @@ footer {
   font-size: 24px;
 }
 
+.overlay-content-p {
+  font-size: 20px;
+}
+
 
 .bottom-bar {
   position: fixed;

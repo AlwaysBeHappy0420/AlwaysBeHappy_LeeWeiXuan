@@ -20,8 +20,27 @@ const projectLanguage = {
       +'<div class="overlay-content-a">*ATTENTION: I cannot share original works here due to contract issue. Below are summarized version.</div>'
       +"<br><br>"
       ,
-      desc: ["This is project 1","This is project 2"],
-      image: ["Images/AXERAS/AppearanceDataList.png","Images/AXERAS/ResultScreen.mp4"],
+      desc: [
+        "This is project 1",
+        "This is project 2",
+        "This is Project 3",
+        "This is Project 4",
+        "This is Project 5",
+        "This is Project 6",
+        "This is Project 7",
+        "This is Project 8",
+        "This is Project 9<br><br><br>",
+      ],
+      image: [
+        "Images/AXERAS/ActionGoalList.png",
+        "Images/AXERAS/ActionGoalParam.png",
+        "Images/AXERAS/ActionGoalCode.png",
+        "Images/AXERAS/AppearanceDataList.png",
+        "Images/AXERAS/AppearanceDataCode.png",
+        "Images/AXERAS/MaterialChanged.png",
+        "Images/AXERAS/UIworks.png",
+        "Images/AXERAS/MainMenuVideo.mp4",
+        "Images/AXERAS/ResultScreenVideo.mp4"],
     },
     VirtualEscape: {
       title: "Corpse Puzzle Platformer",

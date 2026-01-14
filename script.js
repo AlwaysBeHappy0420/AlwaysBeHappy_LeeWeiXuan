@@ -72,8 +72,9 @@ function openProject(key) {
       overlayContent.insertBefore(img, overlayContent.querySelector(".bottom-bar"));
     }
 
-    let desc = document.createElement("p");
+    let desc = document.createElement("div");
     desc.innerHTML = p.desc[i];
+    desc.classList.add("overlay-content-p");
     overlayContent.insertBefore(
       desc,
       overlayContent.querySelector(".bottom-bar")
@@ -124,10 +125,6 @@ cards.forEach((card) => {
   });
 });
 
-window.addEventListener("resize", () => {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-});
 
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") closeProject();
