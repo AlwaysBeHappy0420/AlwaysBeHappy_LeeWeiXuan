@@ -248,10 +248,10 @@ footer {
   font-size: 300px;
 }
 .overlay-content img {
-  width: 30%;
+  width: 40%;
 }
 .overlay-content video {
-  width: 30%;
+  width: 40%;
 }
 .overlay-content {
   position: absolute;
@@ -282,10 +282,10 @@ footer {
     font-size: 180px;
   }
   .overlay-content img {
-    width: 60%;
+    width: 65%;
   }
   .overlay-content video {
-    width: 60%;
+    width: 65%;
   }
 }
 

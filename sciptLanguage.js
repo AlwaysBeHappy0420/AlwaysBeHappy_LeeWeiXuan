@@ -2,7 +2,7 @@ const projectLanguage = {
   en: {
     AXERAS: {
       title: "AXERAS",
-      projectDesc: ' <a href="https://store.steampowered.com/app/3873770/AXERAS/" target="_blank">AXERAS</a> is a turn-based tactical military SRPG.'
+      projectDesc: ' <a href="https://store.steampowered.com/app/3873770/AXERAS/" target="_blank">AXERAS</a> is a turn-based tactical military SRPG developed by <a href="https://x.com/InverseAtelier" target="_blank">Inverse Atelier</a>.'
       +"<br>This project is heavily relying on AI movement where <a>GOAP</a> is implemented."
       +"<br><br>"
       +"My role during internship(3 months) was to <a>support team members in their work</a>"
@@ -43,17 +43,59 @@ const projectLanguage = {
         "Images/AXERAS/ResultScreenVideo.mp4"],
     },
     VirtualEscape: {
-      title: "Corpse Puzzle Platformer",
-      desc: "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.",
-      image: "platformer.jpg",
+      title: "Virtual Escape",
+      projectDesc: "Virtual Escape is a 2D puzzle-solving platformer, "
+      +"<br>where player needs to die to generate corpse to solve the puzzles."
+      ,
+
+      desc: ["A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic."],
+      image: ["platformer.jpg"],
     },
   },
 
   zh: {
     AXERAS: {
-      title: "Divine Descent",
-      desc: "开玩笑吗",
-      image: "divine.jpg",
+      title: "AXERAS",
+      projectDesc:' <a href="https://store.steampowered.com/app/3873770/AXERAS/" target="_blank">AXERAS</a> 是一款由<a href="https://x.com/InverseAtelier" target="_blank">Inverse Atelier</a>开发的回合制战术军事类 SRPG。'
+      +"<br>本项目高度依赖 AI 行动系统，并且依靠 <a>GOAP</a>来完成基本的AI指令。"
+      +"<br><br>"
+      +"我在实习期间（3个月）的主要职责是 <a>协助团队成员完成他们的工作</a>"
+      +"<br>这要求我在几周内 <a>理解整个项目结构</a>，并且"
+      +"<br>尽快 <a>适应开发环境</a>。"
+      +"<br><br><br>"
+      +"<h4>我的工作内容：</h4>"
+      +"<br>· <a>负责开发 AI 目标选择逻辑</a>"
+      +"<br>· 重构现有脚本"
+      +"<br>· 构建 <a>灵活的 UI 窗口系统</a>"
+      +"<br>· 创建 <a>灵活的 AI 控制函数</a>"
+      +"<br>· 创建用于更换不同模型外观数据的功能"
+      +"<br>· 其他：语音脚本 / 调试 / 翻译 等"
+      +"<br><br><br>"
+      +'<div class="overlay-content-a">*注意：由于合约限制，我无法在此展示原始内容。以下为总结版本。</div>'
+      +"<br><br>"
+      ,
+
+      desc: [
+        "描述句1",
+        "描述句2",
+        "描述句3",
+        "描述句4",
+        "描述句5",
+        "描述句6",
+        "描述句7",
+        "描述句8",
+        "描述句9<br><br><br>",
+      ],
+      image: [
+        "Images/AXERAS/ActionGoalList.png",
+        "Images/AXERAS/ActionGoalParam.png",
+        "Images/AXERAS/ActionGoalCode.png",
+        "Images/AXERAS/AppearanceDataList.png",
+        "Images/AXERAS/AppearanceDataCode.png",
+        "Images/AXERAS/MaterialChanged.png",
+        "Images/AXERAS/UIworks.png",
+        "Images/AXERAS/MainMenuVideo.mp4",
+        "Images/AXERAS/ResultScreenVideo.mp4"],
     },
     VirtualEscape: {
       title: "Corpse Puzzle Platformer",
@@ -64,9 +106,47 @@ const projectLanguage = {
 
   jp: {
     AXERAS: {
-      title: "Divine Descent",
-      desc: "冗談っす",
-      image: "divine.jpg",
+      title: "AXERAS",
+      projectDesc: ' <a href="https://store.steampowered.com/app/3873770/AXERAS/" target="_blank">AXERAS</a> は、<a href="https://x.com/InverseAtelier" target="_blank">Inverse Atelier</a>が開発しているターン制タクティカル・ミリタリー系SRPGです。'
+      +"<br>本プロジェクトでは<a> GOAP</a> を実装して、AIの行動ロジックが中核となっております。"
+      +"<br><br>"
+      +"私のインターンシップ期間（3か月）における役割は、<a>チームメンバーの業務支援</a>でした。"
+      +"<br>そのため、短期間で <a>プロジェクト全体の構造を把握</a> し、"
+      +"<br>可能な限り早く <a>開発環境に適応すること</a> が求められました。"
+      +"<br><br><br>"
+      +"<h4>担当業務：</h4>"
+      +"<br>· <a>AIのターゲット選択ロジックの開発を担当</a>"
+      +"<br>· 既存スクリプトのリファクタリング"
+      +"<br>· <a>柔軟性の高いUIウィンドウの構築</a>"
+      +"<br>· <a>柔軟性の高いAI制御関数の作成</a>"
+      +"<br>· 各モデルに対応した外観データ切り替え機能の実装"
+      +"<br>· その他：ボイス関連スクリプト作成 / デバッグ / 翻訳 など"
+      +"<br><br><br>"
+      +'<div class="overlay-content-a">※注意：契約上の理由により、原作業物を公開することはできません。以下は内容を要約したものです。</div>'
+      +"<br><br>"
+      ,
+
+      desc: [
+        "定式1",
+        "定式2",
+        "定式3",
+        "定式4",
+        "定式5",
+        "定式6",
+        "定式7",
+        "定式8",
+        "定式9<br><br><br>",
+      ],
+      image: [
+        "Images/AXERAS/ActionGoalList.png",
+        "Images/AXERAS/ActionGoalParam.png",
+        "Images/AXERAS/ActionGoalCode.png",
+        "Images/AXERAS/AppearanceDataList.png",
+        "Images/AXERAS/AppearanceDataCode.png",
+        "Images/AXERAS/MaterialChanged.png",
+        "Images/AXERAS/UIworks.png",
+        "Images/AXERAS/MainMenuVideo.mp4",
+        "Images/AXERAS/ResultScreenVideo.mp4"],
     },
     VirtualEscape: {
       title: "Corpse Puzzle Platformer",

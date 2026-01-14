@@ -133,7 +133,7 @@ document.addEventListener("keydown", (e) => {
 //set default language
 document.addEventListener("DOMContentLoaded", () => {
   setLanguage("en");
-  openProject("AXERAS");
+  openProject("VirtualEscape");
 });
 
 mainBtn.addEventListener("click", () => {
