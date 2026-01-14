@@ -244,6 +244,25 @@ footer {
   color: rgba(255, 255, 255, 0.1);
   z-index: 1;
 }
+/* Default (PC / large screens) */
+.project-overlay h3 {
+  font-size: 300px;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .bg-text {
+    font-size: 180px;
+  }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+  .bg-text {
+    font-size: 96px;
+  }
+}
+
 
 /* Content on top */
 .overlay-content {
