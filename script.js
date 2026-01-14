@@ -10,7 +10,7 @@ function handleScrollReveal() {
     // reveal
     if (elementTop < windowHeight - 120 && elementBottom > 0) {
       el.classList.add("active");
-    } 
+    }
     // remove when fully out of screen
     else {
       el.classList.remove("active");
@@ -30,10 +30,70 @@ function setLanguage(lang) {
 
 function openProject(key) {
   let p = projectLanguage[savedLang][key];
-  document.getElementById("overlayTitle").innerText = p.title;
-  document.getElementById("overlayDesc").innerText = p.desc;
-  document.getElementById("overlayTools").innerText = p.tools;
-  document.getElementById("overlayImage").src = p.image;
+
+  const overlayContent = document.getElementById("overlay-content");
+  overlayContent.querySelectorAll("*").forEach((el) => el.remove());
+  let btm = document.createElement("div");
+  btm.classList.add("bottom-bar");
+  let btn = document.createElement("button");
+  btn.onclick = closeProject;
+  btn.innerHTML = "Close";
+  btm.appendChild(btn);
+  overlayContent.appendChild(btm);
+
+  let projectDesc = document.createElement("p");
+  projectDesc.innerText = p.projectDesc;
+  overlayContent.insertBefore(
+    projectDesc,
+    overlayContent.querySelector(".bottom-bar")
+  );
+
+  let br1 = document.createElement("br");
+  overlayContent.insertBefore(br1, overlayContent.querySelector(".bottom-bar"));
+  let br2 = document.createElement("br");
+  overlayContent.insertBefore(br2, overlayContent.querySelector(".bottom-bar"));
+
+  for (let i = 0; i < p.image.length; i++) {
+    if (p.image[i].includes(".mp4")) {
+      let vid = document.createElement("video");
+      vid.controls = true; // show play/pause buttons
+      vid.autoplay = true; // start automatically
+      vid.loop = true; // repeat
+      vid.muted = true; // required for autoplay in most browsers 
+      vid.src = p.image[i];
+      overlayContent.insertBefore(vid, overlayContent.querySelector(".bottom-bar"));
+    } 
+    else {
+      let img = document.createElement("img");
+      img.src = p.image[i];
+      overlayContent.insertBefore(img, overlayContent.querySelector(".bottom-bar"));
+    }
+
+    let desc = document.createElement("p");
+    desc.innerHTML = p.desc[i];
+    overlayContent.insertBefore(
+      desc,
+      overlayContent.querySelector(".bottom-bar")
+    );
+
+    let br1 = document.createElement("br");
+    overlayContent.insertBefore(
+      br1,
+      overlayContent.querySelector(".bottom-bar")
+    );
+
+    let br2 = document.createElement("br");
+    overlayContent.insertBefore(
+      br2,
+      overlayContent.querySelector(".bottom-bar")
+    );
+
+    let br3 = document.createElement("br");
+    overlayContent.insertBefore(
+      br3,
+      overlayContent.querySelector(".bottom-bar")
+    );
+  }
   document.getElementById("projectOverlay").classList.add("active");
   document.body.style.overflow = "hidden";
 }
@@ -43,44 +103,11 @@ function closeProject() {
   document.body.style.overflow = "auto";
 }
 
-function checkIfCentered() {
-  const rect = textElement.getBoundingClientRect();
-  const viewportHeight = window.innerHeight;
-
-  // Calculate the vertical center of the viewport
-  const viewportCenter = viewportHeight / 2;
-
-  // Calculate the vertical center of the element
-  const elementCenter = rect.top + rect.height / 2;
-
-  // Check if element center is within a certain range of viewport center
-  const offset = 50; // tolerance in pixels
-
-  if (
-    elementCenter >= viewportCenter - offset &&
-    elementCenter <= viewportCenter + offset
-  ) {
-    console.log("Text is at the center of the screen!");
-    textElement.style.color = "orange"; // example effect
-  } else {
-    textElement.style.color = "black"; // reset
-  }
-  if (
-    elementCenter >= viewportCenter - offset &&
-    elementCenter <= viewportCenter + offset
-  ) {
-    element.classList.add("highlight");
-  } else {
-    element.classList.remove("highlight");
-  }
-}
-
 const cards = document.querySelectorAll(".project-card");
 const mainBtn = document.getElementById("mainBtn");
 const languageIcon = document.getElementById("languageIcon");
 const languageOptionBox = document.getElementById("languageOptionBox");
 const optionBox = document.getElementById("optionsBox");
-const textElement = document.querySelector("#myText");
 
 cards.forEach((card) => {
   card.addEventListener("mousemove", () => {
@@ -104,7 +131,7 @@ document.addEventListener("keydown", (e) => {
 //set default language
 document.addEventListener("DOMContentLoaded", () => {
   setLanguage("en");
-  //openProject('AXERAS')
+  openProject("AXERAS");
 });
 
 mainBtn.addEventListener("click", () => {
@@ -119,11 +146,8 @@ languageIcon.addEventListener("click", () => {
 
 window.addEventListener("scroll", handleScrollReveal);
 window.addEventListener("load", handleScrollReveal);
-window.addEventListener("scroll", checkIfCentered);
-
 
 window.addEventListener("scroll", () => {
-
   if (optionBox.classList.contains("show")) optionBox.classList.toggle("show");
   if (languageOptionBox.classList.contains("show"))
     languageOptionBox.classList.toggle("show");

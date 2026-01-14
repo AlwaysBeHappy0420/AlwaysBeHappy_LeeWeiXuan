@@ -267,8 +267,6 @@ footer {
 .overlay-content {
   position: absolute;
   top: 240px;
-  left: 0;
-  height: 100vh;
   width: 100%;
 
   display: flex;
@@ -289,9 +287,43 @@ footer {
 
 
 .overlay-content img {
+  width: 30%;
+}
+
+.overlay-content p{
+  font-size: 24px;
+}
+
+.overlay-content video{
+  width: 30%;
+}
+
+
+.bottom-bar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
   width: 100%;
-  border-radius: 16px;
-  margin-bottom: 20px;
+  height: 80px;
+
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 50;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* button style example */
+.bottom-bar button {
+  padding: 12px 40px;
+  font-size: 16px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
 }
 
 

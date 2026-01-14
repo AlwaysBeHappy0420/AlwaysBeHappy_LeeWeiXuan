@@ -2,14 +2,13 @@ const projectLanguage = {
   en: {
     AXERAS: {
       title: "AXERAS",
-      desc: "This is project 1",
-      tools: "Unity, C#, FMOD",
-      image: "divine.jpg",
+      projectDesc:"Dont mind",
+      desc: ["This is project 1","This is project 2"],
+      image: ["Images/AXERAS/ResultScreen.mp4","Images/AXERAS/AppearanceDataList.png"],
     },
     VirtualEscape: {
       title: "Corpse Puzzle Platformer",
       desc: "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.",
-      tools: "Unity, C#, Aseprite",
       image: "platformer.jpg",
     },
   },
@@ -18,13 +17,11 @@ const projectLanguage = {
     AXERAS: {
       title: "Divine Descent",
       desc: "开玩笑吗",
-      tools: "Unity, C#, FMOD",
       image: "divine.jpg",
     },
     VirtualEscape: {
       title: "Corpse Puzzle Platformer",
       desc: "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.",
-      tools: "Unity, C#, Aseprite",
       image: "platformer.jpg",
     },
   },
@@ -33,17 +30,16 @@ const projectLanguage = {
     AXERAS: {
       title: "Divine Descent",
       desc: "冗談っす",
-      tools: "Unity, C#, FMOD",
       image: "divine.jpg",
     },
     VirtualEscape: {
       title: "Corpse Puzzle Platformer",
       desc: "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.",
-      tools: "Unity, C#, Aseprite",
       image: "platformer.jpg",
     },
   },
 };
+
 
 const translations = {
   en: {
