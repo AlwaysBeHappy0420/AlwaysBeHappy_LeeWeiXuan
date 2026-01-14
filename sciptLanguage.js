@@ -2,9 +2,26 @@ const projectLanguage = {
   en: {
     AXERAS: {
       title: "AXERAS",
-      projectDesc:"Dont mind",
+      projectDesc: ' <a href="https://store.steampowered.com/app/3873770/AXERAS/" target="_blank">AXERAS</a> is a turn-based tactical military SRPG.'
+      +"<br>This project is heavily relying on AI movement where <a>GOAP</a> is implemented."
+      +"<br><br>"
+      +"My role during internship(3 months) was to <a>support team members in their work</a>"
+      +"<br>which required me to <a>understand the entire project within a few weeks</a> and"
+      +"<br>adapt to the environment as soon as possible."
+      +"<br><br><br>"
+      +"<h4>My tasks:</h4>"
+      +"<br>·<a> Responsible for developing AI target-selection logic</a>"
+      +"<br>· Refactored existing Scripts"
+      +"<br>· Built <a>flexible UI windows</a >"
+      +"<br>· Created <a>flexible AI control functions</a>"
+      +"<br>· Created function to change Apperance Data for different models"
+      +"<br>· Others: Voice-lines scripts/ Debugging/ Translation etc."
+      +"<br><br><br>"
+      +'<div class="overlay-content-a">*ATTENTION: I cannot share original works here due to contract issue. Below are summarized version.</div>'
+      +"<br><br>"
+      ,
       desc: ["This is project 1","This is project 2"],
-      image: ["Images/AXERAS/ResultScreen.mp4","Images/AXERAS/AppearanceDataList.png"],
+      image: ["Images/AXERAS/AppearanceDataList.png","Images/AXERAS/ResultScreen.mp4"],
     },
     VirtualEscape: {
       title: "Corpse Puzzle Platformer",

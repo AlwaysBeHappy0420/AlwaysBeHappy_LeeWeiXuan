@@ -31,6 +31,9 @@ function setLanguage(lang) {
 function openProject(key) {
   let p = projectLanguage[savedLang][key];
 
+  let title = document.getElementById("overlayTitle");
+  title.innerHTML = p.title;
+
   const overlayContent = document.getElementById("overlay-content");
   overlayContent.querySelectorAll("*").forEach((el) => el.remove());
   let btm = document.createElement("div");
@@ -42,7 +45,7 @@ function openProject(key) {
   overlayContent.appendChild(btm);
 
   let projectDesc = document.createElement("p");
-  projectDesc.innerText = p.projectDesc;
+  projectDesc.innerHTML = p.projectDesc;
   overlayContent.insertBefore(
     projectDesc,
     overlayContent.querySelector(".bottom-bar")
@@ -94,6 +97,8 @@ function openProject(key) {
       overlayContent.querySelector(".bottom-bar")
     );
   }
+
+
   document.getElementById("projectOverlay").classList.add("active");
   document.body.style.overflow = "hidden";
 }

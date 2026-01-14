@@ -290,6 +290,8 @@ footer {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  text-align: justify;
+  line-height: 1.4;
 
   z-index: 2; /* higher = on top */
   animation: pop 0.6s ease;
@@ -300,6 +302,14 @@ footer {
   overflow-x: hidden;
   font-size: 12px;
   color: white;
+}
+.overlay-content a {
+  color: rgb(91, 170, 255);
+}
+
+.overlay-content-a {
+  font-size: 16px;
+  color: rgb(227, 255, 102);
 }
 
 .overlay-content p {
