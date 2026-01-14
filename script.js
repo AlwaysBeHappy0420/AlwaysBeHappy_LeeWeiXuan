@@ -1,12 +1,19 @@
-function revealOnScroll() {
+function handleScrollReveal() {
   const revealItems = document.querySelectorAll(".reveal");
+  const windowHeight = window.innerHeight;
 
   revealItems.forEach((el) => {
-    const windowHeight = window.innerHeight;
-    const elementTop = el.getBoundingClientRect().top;
+    const rect = el.getBoundingClientRect();
+    const elementTop = rect.top;
+    const elementBottom = rect.bottom;
 
-    if (elementTop < windowHeight - 120) {
+    // reveal
+    if (elementTop < windowHeight - 120 && elementBottom > 0) {
       el.classList.add("active");
+    } 
+    // remove when fully out of screen
+    else {
+      el.classList.remove("active");
     }
   });
 }
@@ -27,7 +34,6 @@ function openProject(key) {
   document.getElementById("overlayDesc").innerText = p.desc;
   document.getElementById("overlayTools").innerText = p.tools;
   document.getElementById("overlayImage").src = p.image;
-
   document.getElementById("projectOverlay").classList.add("active");
   document.body.style.overflow = "hidden";
 }
@@ -97,44 +103,29 @@ document.addEventListener("keydown", (e) => {
 
 //set default language
 document.addEventListener("DOMContentLoaded", () => {
-  setLanguage("jp");
+  setLanguage("en");
+  openProject('AXERAS')
 });
-
-
 
 mainBtn.addEventListener("click", () => {
   optionBox.classList.toggle("show");
-  if(languageOptionBox.classList.contains("show")) languageOptionBox.classList.toggle("show");
+  if (languageOptionBox.classList.contains("show"))
+    languageOptionBox.classList.toggle("show");
 });
 languageIcon.addEventListener("click", () => {
   languageOptionBox.classList.toggle("show");
-  if(optionBox.classList.contains("show")) optionBox.classList.toggle("show");
+  if (optionBox.classList.contains("show")) optionBox.classList.toggle("show");
 });
 
-
-
-window.addEventListener("scroll", revealOnScroll);
-window.addEventListener("scroll", checkIfCentered);
-window.addEventListener("load", revealOnScroll);
-
-// window.addEventListener("click", (event) => {
-//   // If click is outside both the optionBox and its toggle button
-//   if (!optionBox.contains(event.target) && 
-//       optionBox.classList.contains("show")) {
-//     optionBox.classList.remove("show");
-//   }
-  
-//   // If click is outside both the languageOptionBox and its toggle button
-//   if (!languageOptionBox.contains(event.target) && 
-//       languageOptionBox.classList.contains("show")) {
-//     languageOptionBox.classList.remove("show");
-//   }
-// });
+window.addEventListener("scroll", handleScrollReveal);
+window.addEventListener("load", handleScrollReveal);
 
 
 window.addEventListener("scroll", () => {
-  if(optionBox.classList.contains("show")) optionBox.classList.toggle("show");
-  if(languageOptionBox.classList.contains("show")) languageOptionBox.classList.toggle("show");
+  checkIfCentered();
+  if (optionBox.classList.contains("show")) optionBox.classList.toggle("show");
+  if (languageOptionBox.classList.contains("show"))
+    languageOptionBox.classList.toggle("show");
 
   // Text highlight effect
   const elements = document.querySelectorAll(".section h2"); // All section headings

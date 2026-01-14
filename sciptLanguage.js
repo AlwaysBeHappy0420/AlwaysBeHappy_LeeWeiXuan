@@ -1,7 +1,7 @@
 const projectLanguage = {
   en: {
     AXERAS: {
-      title: "Divine Descent",
+      title: "AXERAS",
       desc: "This is project 1",
       tools: "Unity, C#, FMOD",
       image: "divine.jpg",
@@ -47,7 +47,7 @@ const projectLanguage = {
 
 const translations = {
   en: {
-    info: "My Info",
+    info: "PDFs",
     hero_title: "Hello, This is <span>Lee Wei Xuan</span>",
     hero_desc:
       "I am a Malaysian game developer, and you’ve come to the right place if you’re looking for a strong and reliable one.",
@@ -85,7 +85,7 @@ const translations = {
   },
 
   zh: {
-    info: "个人资料",
+    info: "PDFs",
     hero_title: "这里是 <span>李维旋</span> 的个人网站",
     hero_desc:
       "我是一名马来西亚的游戏开发者，如果你正在寻找一位有充足实力、值得信赖的游戏开发人员，这里是正确的选择。",
@@ -106,7 +106,7 @@ const translations = {
       "・有制作 <b>个人网站</b>的经验。熟悉使用以下语言： <b>JavaScript, HTML, CSS, php, MySQL...</b><br><br>" +
       "・熟悉写<b>开发日志</b>。<br><br>" +
       "・不擅长与人进行口头表达上的<b>沟通</b>，但文字表达上相对流畅。<br><br>" +
-      "・获得<b>日语(N1)准证. 母语为英文，中文（简体/繁体），马来文，客家语，粤语，一部分福建话（闽南语）</b><br><br>",
+      "・获得<b>日语(N1)准证. 母语为英文，中文（简体/繁体），马来文，客家语，粤语，一部分福建话（闽南语）</b><br><br><br>",
     about_desc4:
       "<b><h4>个人思想:</h4></b><br>" +
       "・享受 <b>开发游戏的过程</b>， 因为它总能给我提供一种成就感。<br><br>" +
@@ -123,7 +123,7 @@ const translations = {
   },
 
   jp: {
-    info: "個人情報",
+    info: "PDFs",
     hero_title: "<span>リ イセン</span> の個人サイト",
     hero_desc:
       "優秀で信頼できるゲーム開発者をお探しでしたら、ここはまさにうってつけの場所です。",
@@ -144,7 +144,7 @@ const translations = {
       "・<b>個人サイト</b> の制作経験があります。以下の言語の使用に精通しています： <b>JavaScript, HTML, CSS, php, MySQL...</b><br><br>" +
       "・<b>開発ログ</b> の作成に慣れています。<br><br>" +
       "・口頭での<b>コミュニケーション</b>はあまり得意ではありませんが、文章での表現は比較的得意です。<br><br>" +
-      "・<b>日本語(N1)資格取得。母語は英語、中国語（簡体字／繁体字）、マレー語、客家語、広東語、一部福建語（閩南語）</b><br><br>",
+      "・<b>日本語(N1)資格取得。母語は英語、中国語（簡体字／繁体字）、マレー語、客家語、広東語、一部福建語（閩南語）</b><br><br><br>",
     about_desc4:
       "<b><h4>個人の考え:</h4></b><br>" +
       "・<b>ゲーム開発の過程を心から楽しんでおり</b>、一つ一つの制作工程が大きな達成感につながっています。<br><br>" +
