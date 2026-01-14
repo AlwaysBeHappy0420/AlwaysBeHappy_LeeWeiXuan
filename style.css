@@ -321,7 +321,8 @@ footer {
   overflow-y: auto;
   overflow-x: hidden;
   font-size: 12px;
-  color: 
+  color: white;
+  } 
 }
 
 /* Content on top */
