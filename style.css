@@ -247,21 +247,38 @@ footer {
 .project-overlay h3 {
   font-size: 300px;
 }
+.overlay-content img {
+  width: 30%;
+}
+.overlay-content video {
+  width: 30%;
+}
 
 /* Tablets */
 @media (max-width: 1024px) {
-  .project-overlay h3  {
+  .project-overlay h3 {
     font-size: 180px;
+  }
+  .overlay-content img {
+    width: 60%;
+  }
+  .overlay-content video {
+    width: 60%;
   }
 }
 
 /* Phones */
 @media (max-width: 600px) {
-  .project-overlay h3  {
+  .project-overlay h3 {
     font-size: 96px;
   }
+  .overlay-content img {
+    width: 80%;
+  }
+  .overlay-content video {
+    width: 80%;
+  }
 }
-
 
 /* Content on top */
 .overlay-content {
@@ -285,19 +302,17 @@ footer {
   color: white;
 }
 
+.overlay-content p {
+  font-size: 24px;
+}
 
 .overlay-content img {
   width: 30%;
 }
 
-.overlay-content p{
-  font-size: 24px;
-}
-
-.overlay-content video{
+.overlay-content video {
   width: 30%;
 }
-
 
 .bottom-bar {
   position: fixed;
@@ -314,7 +329,7 @@ footer {
   align-items: center;
 
   z-index: 50;
-  border-top: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* button style example */
@@ -325,11 +340,6 @@ footer {
   border: none;
   cursor: pointer;
 }
-
-
-
-
-
 
 .options {
   position: fixed;
