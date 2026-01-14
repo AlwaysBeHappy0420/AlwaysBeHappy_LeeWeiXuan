@@ -104,7 +104,7 @@ document.addEventListener("keydown", (e) => {
 //set default language
 document.addEventListener("DOMContentLoaded", () => {
   setLanguage("en");
-  openProject('AXERAS')
+  //openProject('AXERAS')
 });
 
 mainBtn.addEventListener("click", () => {
@@ -119,10 +119,11 @@ languageIcon.addEventListener("click", () => {
 
 window.addEventListener("scroll", handleScrollReveal);
 window.addEventListener("load", handleScrollReveal);
+window.addEventListener("scroll", checkIfCentered);
 
 
 window.addEventListener("scroll", () => {
-  checkIfCentered();
+
   if (optionBox.classList.contains("show")) optionBox.classList.toggle("show");
   if (languageOptionBox.classList.contains("show"))
     languageOptionBox.classList.toggle("show");
