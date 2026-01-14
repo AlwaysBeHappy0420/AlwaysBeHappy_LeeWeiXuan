@@ -306,13 +306,6 @@ footer {
   font-size: 24px;
 }
 
-.overlay-content img {
-  width: 30%;
-}
-
-.overlay-content video {
-  width: 30%;
-}
 
 .bottom-bar {
   position: fixed;
