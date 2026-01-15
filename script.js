@@ -62,6 +62,7 @@ function openProject(key) {
       vid.controls = true; // show play/pause buttons
       vid.autoplay = true; // start automatically
       vid.loop = true; // repeat
+      vid.playsInline = true;
       vid.muted = true; // required for autoplay in most browsers 
       vid.src = p.image[i];
       overlayContent.insertBefore(vid, overlayContent.querySelector(".bottom-bar"));
