@@ -21,15 +21,17 @@ const projectLanguage = {
       +"<br><br>"
       ,
       desc: [
-        "This is the list that I have done for the AI target selection, including attacking player, covering teammates",
-        "This is project 2",
-        "This is Project 3",
-        "This is Project 4",
-        "This is Project 5",
-        "This is Project 6",
-        "This is Project 7",
-        "This is Project 8",
-        "This is Project 9<br><br><br>",
+        "A list that I have done for the AI target selection, including attacking player, covering teammates, etc.",
+        "Scored Parameter to be passed from Objective into ActionGoal for the logic chain to decide the action."+"<br>It's user-defined parameters, meaning inside the class there can be different data based on situation.",
+        "In GOAP, ActionGoal is the last action to be taken. "+"<br>Since there are multiple runs, it includes as well the logic for AI. <br> There are preview scripts, since I am not the one created it, I cannot show it here. <br>By returning 'FireAction' as an IEnumerator to the preview, AI then can wait for the action to be done.",
+        "A list that I have done for changing model Appearance Data",
+        "This is the function to change materials for models. <br>Since there are multiple models, I first have the visual controller for the models.<br>"+
+        "By getting the renderer on them, based on the controller type assign the different material. <br> Materials are predefined based on the faction.",
+        "The rough result for the changing materials based on faction. It's changing automatically during runtime.",
+        "This is the interface made for Tutorial. The content and size is flexible, which gives the control to designers.<br>"+
+        "This is made in Scriptable Object script, which it updates only when player inputs something.",
+        "This is the result for MainMenu. All the animations are done by coding.",
+        "This is the result for Result Screen. All the animations are done by coding as well.<br>There are some scaling problems happened as well, but it didn't really affect the result.<br><br><br>",
       ],
       image: [
         "Images/AXERAS/ActionGoalList.png",
