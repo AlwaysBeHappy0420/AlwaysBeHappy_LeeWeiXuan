@@ -20,19 +20,25 @@ const projectLanguage = {
       +'<div class="overlay-content-attention">*ATTENTION: I cannot share original works here due to contract issue. Below are summarized version.</div>'
       +"<br><br>"
       ,
-      desc: [
-        "A list that I have done for the AI target selection, including attacking player, covering teammates, etc.",
-        "Scored Parameter to be passed from Objective into ActionGoal for the logic chain to decide the action."+"<br>It's user-defined parameters, meaning inside the class there can be different data based on situation.",
-        "In GOAP, ActionGoal is the last action to be taken. "+"<br>Since there are multiple runs, it includes as well the logic for AI. <br> There are preview scripts, since I am not the one created it, I cannot show it here. <br>By returning 'FireAction' as an IEnumerator to the preview, AI then can wait for the action to be done.",
-        "A list that I have done for changing model Appearance Data",
-        "This is the function to change materials for models. <br>Since there are multiple models, I first have the visual controller for the models.<br>"+
-        "By getting the renderer on them, based on the controller type assign the different material. <br> Materials are predefined based on the faction.",
-        "The rough result for the changing materials based on faction. It's changing automatically during runtime.",
-        "This is the interface made for Tutorial. The content and size is flexible, which gives the control to designers.<br>"+
-        "This is made in Scriptable Object script, which it updates only when player inputs something.",
-        "This is the result for MainMenu. All the animations are done by coding.",
-        "This is the result for Result Screen. All the animations are done by coding as well.<br>There are some scaling problems happened as well, but it didn't really affect the result.<br><br><br>",
-      ],
+desc: [
+  "A list I created for AI target selection, including attacking the player, covering teammates, and more.",
+  "A scored parameter passed from Objective into ActionGoal, used by the logic chain to decide the next action."
+    + "<br>These are user-defined parameters, meaning the class can store different data depending on the situation.",
+  "In GOAP, ActionGoal represents the final action to be executed."
+    + "<br>Since there are multiple runs, it also includes the core AI logic. <br> There are preview scripts, but since I didn’t create them, I can’t show them here. <br>By returning 'FireAction' as an IEnumerator to the preview, the AI can wait until the action is completed.",
+  "A list I created for modifying model appearance data.",
+  "This function is used to change model materials. <br>Since there are multiple models, I first look for the visual controller for them.<br>"
+    + "By retrieving their renderers, different materials are assigned based on the controller type. <br> Materials are predefined by developers according to faction.",
+  "A rough result showing materials changing based on faction. The change happens automatically at runtime.",
+  "This is the interface created for the tutorial. The content and size are flexible, giving designers more control.<br>" + "It is built using Scriptable Objects and only updates when the player provides input.",
+  "This is the final result for the Main Menu. All animations are done through code.",
+  "This is the code used to create the Main Menu animations. It uses interfaces as references.<br>Actions are determined based on pointer events.",
+  "This is the final result for the Result Screen. All animations are also done through code.<br>",
+  "This is the animation sequence for the Result Screen. <br>It uses the WaitUntil function to wait for a signal indicating that the animation has finished.",
+  "This is the exact animation code. <br>Everything is handled through code by calculating relative positions to produce the animations.<br><br><br><br>",
+
+],
+
       image: [
         "Images/AXERAS/ActionGoalList.png",
         "Images/AXERAS/ActionGoalParam.png",
@@ -42,7 +48,10 @@ const projectLanguage = {
         "Images/AXERAS/MaterialChanged.png",
         "Images/AXERAS/UIworks.png",
         "Images/AXERAS/MainMenuVideo.mp4",
-        "Images/AXERAS/ResultScreenVideo.mp4"],
+        "Images/AXERAS/HoverEffect.png",
+        "Images/AXERAS/ResultScreenVideo.mp4",
+        "Images/AXERAS/ResultScreen.png",
+        "Images/AXERAS/UnitResultText.png"],
     },
     VirtualEscape: {
       title: '<strong id="top">VirtualEscape</strong>',
@@ -141,17 +150,26 @@ const projectLanguage = {
       +"<br><br>"
       ,
 
-      desc: [
-        "描述句1",
-        "描述句2",
-        "描述句3",
-        "描述句4",
-        "描述句5",
-        "描述句6",
-        "描述句7",
-        "描述句8",
-        "描述句9<br><br><br>",
-      ],
+desc: [
+  "我制作的一个用于 AI 目标选择的列表，包括攻击玩家、掩护队友等行为。",
+  "一个从 Objective 传递到 ActionGoal 的评分参数，用于逻辑链中决定下一步行动。"
+    + "<br>这些是用户自定义参数，意味着该类可以根据不同情况存储不同的数据。",
+  "在 GOAP 中，ActionGoal 代表最终要执行的动作。"
+    + "<br>由于存在多次运行，它也包含了核心 AI 逻辑。 <br> 其中有一些预览脚本，因为不是我创建的，所以无法在这里展示。 <br>通过向预览返回 'FireAction' 作为 IEnumerator，AI 可以等待动作执行完成。",
+  "我制作的一个用于修改模型外观数据的列表。",
+  "这个函数用于更换模型材质。 <br>由于存在多个模型，我会先查找它们的视觉控制器。<br>"
+    + "通过获取它们的渲染器，根据控制器类型分配不同的材质。 <br> 材质由开发者根据阵营预先定义。",
+  "基于阵营自动切换材质的初步效果展示。该变化会在运行时自动进行。",
+  "这是为教程系统制作的界面。内容和大小都具有灵活性，给予设计师更多控制权。<br>" 
+    + "它基于 Scriptable Object 制作，并且只会在玩家输入时更新。",
+  "这是主菜单的最终效果。所有动画都是通过代码实现的。",
+  "这是实现主菜单动画的代码。它使用接口作为引用。<br>根据指针事件来判断执行的操作。",
+  "这是结果界面的最终效果。所有动画同样都是通过代码实现的。<br>",
+  "这是结果界面的动画流程。 <br>它使用 WaitUntil 函数来等待动画完成的信号。",
+  "这是具体的动画实现代码。 <br>所有内容都通过代码处理，通过计算相对位置来实现动画效果。<br><br><br><br>",
+
+],
+
       image: [
         "Images/AXERAS/ActionGoalList.png",
         "Images/AXERAS/ActionGoalParam.png",
@@ -161,7 +179,10 @@ const projectLanguage = {
         "Images/AXERAS/MaterialChanged.png",
         "Images/AXERAS/UIworks.png",
         "Images/AXERAS/MainMenuVideo.mp4",
-        "Images/AXERAS/ResultScreenVideo.mp4"],
+        "Images/AXERAS/HoverEffect.png",
+        "Images/AXERAS/ResultScreenVideo.mp4",
+        "Images/AXERAS/ResultScreen.png",
+        "Images/AXERAS/UnitResultText.png"],
     },
     VirtualEscape: {
       title: '<strong id="top">Virtual Escape</strong>',
@@ -259,17 +280,26 @@ const projectLanguage = {
       +"<br><br>"
       ,
 
-      desc: [
-        "定式1",
-        "定式2",
-        "定式3",
-        "定式4",
-        "定式5",
-        "定式6",
-        "定式7",
-        "定式8",
-        "定式9<br><br><br>",
-      ],
+desc: [
+  "AIのターゲット選択用に作成したリストで、プレイヤーへの攻撃、味方の援護などを含んでいます。",
+  "Objective から ActionGoal に渡されるスコア付きパラメータで、ロジックチェーンが次の行動を決定するために使用されます。"
+    + "<br>これらはユーザー定義パラメータであり、状況に応じてクラス内に異なるデータを持たせることができます。",
+  "GOAP において、ActionGoal は最終的に実行される行動を表します。"
+    + "<br>複数回の実行があるため、AIのコアロジックも含まれています。 <br> 一部にプレビュースクリプトがありますが、私が作成したものではないため、ここでは公開できません。 <br>プレビュー側に 'FireAction' を IEnumerator として返すことで、AIは行動の完了を待機できます。",
+  "モデルの外観データを変更するために作成したリストです。",
+  "この関数はモデルのマテリアルを変更するためのものです。 <br>複数のモデルがあるため、まずビジュアルコントローラーを探します。<br>"
+    + "レンダラーを取得し、コントローラーの種類に応じて異なるマテリアルを割り当てます。 <br> マテリアルは陣営ごとに開発側で事前定義されています。",
+  "陣営に基づいてマテリアルが自動的に切り替わる途中結果の例です。実行時に自動で変更されます。",
+  "チュートリアル用に作成したインターフェースです。<br>内容やサイズは柔軟に変更でき、デザイナーが制御しやすい構成になっています。<br>" 
+    + "Scriptable Object を使用して作成されており、プレイヤーが入力した時のみ更新されます。",
+  "メインメニューの最終結果です。すべてのアニメーションはコードで実装しています。",
+  "メインメニューのアニメーションを実現するためのコードです。<br>インターフェースを参照として使用しています。<br>ポインターイベントに基づいて処理を分岐させています。",
+  "結果画面です。こちらもすべてのアニメーションはコードで実装しています。<br>",
+  "結果画面のアニメーションシーケンスです。 <br>WaitUntil 関数を使用して、アニメーション完了のシグナルを待機しています。",
+  "具体的なアニメーション実装コードです。 <br>すべてコードで処理されており、相対位置を計算してアニメーションを実現しています。<br><br><br><br>",
+
+],
+
       image: [
         "Images/AXERAS/ActionGoalList.png",
         "Images/AXERAS/ActionGoalParam.png",
@@ -279,7 +309,10 @@ const projectLanguage = {
         "Images/AXERAS/MaterialChanged.png",
         "Images/AXERAS/UIworks.png",
         "Images/AXERAS/MainMenuVideo.mp4",
-        "Images/AXERAS/ResultScreenVideo.mp4"],
+        "Images/AXERAS/HoverEffect.png",
+        "Images/AXERAS/ResultScreenVideo.mp4",
+        "Images/AXERAS/ResultScreen.png",
+        "Images/AXERAS/UnitResultText.png"],
     },
     VirtualEscape: {
       title: '<strong id="top">Virtual Escape</strong>',
