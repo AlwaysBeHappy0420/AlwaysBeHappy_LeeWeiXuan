@@ -74,7 +74,7 @@ function openProject(key) {
 
     let desc = document.createElement("div");
     desc.innerHTML = p.desc[i];
-    desc.classList.add("overlay-content-p");
+    desc.classList.add("overlay-content-divsmallfont");
     overlayContent.insertBefore(
       desc,
       overlayContent.querySelector(".bottom-bar")
@@ -156,28 +156,15 @@ window.addEventListener("scroll", () => {
 
   // Text highlight effect
   const elements = document.querySelectorAll(".section h2"); // All section headings
-  const secondElements = document.querySelectorAll(".section p");
+  const elements2 = document.querySelectorAll("button"); // All section headings
+  const secondElements = document.querySelectorAll("*");
   const viewportCenter = window.innerHeight / 2.5;
-
-  elements.forEach((el) => {
-    const rect = el.getBoundingClientRect();
-    const elementCenter = rect.top + rect.height / 2;
-    const offset = 80; // tolerance in px
-
-    if (
-      elementCenter >= viewportCenter - offset &&
-      elementCenter <= viewportCenter + offset
-    ) {
-      el.classList.add("highlight");
-    } else {
-      el.classList.remove("highlight");
-    }
-  });
+    const offset = 200; // tolerance in px
 
   secondElements.forEach((el) => {
     const rect = el.getBoundingClientRect();
     const elementCenter = rect.top + rect.height / 2;
-    const offset = 80; // tolerance in px
+
 
     if (
       elementCenter >= viewportCenter - offset &&
@@ -185,6 +172,30 @@ window.addEventListener("scroll", () => {
     ) {
       el.classList.add("Wordshighlight");
     } else {
+      el.classList.remove("Wordshighlight");
+    }
+  });
+  
+  elements.forEach((el) => {
+    const rect = el.getBoundingClientRect();
+    const elementCenter = rect.top + rect.height / 2;
+
+    if (elementCenter >= viewportCenter - offset &&elementCenter <= viewportCenter + offset) 
+    {
+      el.classList.remove("Wordshighlight");
+      el.classList.add("highlight");
+    } 
+    else 
+    {
+      el.classList.remove("highlight");
+    }
+  });
+    elements2.forEach((el) => {
+    const rect = el.getBoundingClientRect();
+    const elementCenter = rect.top + rect.height / 2;
+
+    if (elementCenter >= viewportCenter - offset &&elementCenter <= viewportCenter + offset) 
+    {
       el.classList.remove("Wordshighlight");
     }
   });
