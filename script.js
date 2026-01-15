@@ -103,6 +103,7 @@ function openProject(key) {
 
   document.getElementById("projectOverlay").classList.add("active");
   document.body.style.overflow = "hidden";
+  document.getElementById("top").scrollIntoView();
 }
 
 function closeProject() {
@@ -133,8 +134,8 @@ document.addEventListener("keydown", (e) => {
 
 //set default language
 document.addEventListener("DOMContentLoaded", () => {
-  setLanguage("jp");
-  openProject("VirtualEscape");
+  setLanguage("en");
+  openProject("AXERAS");
 });
 
 mainBtn.addEventListener("click", () => {

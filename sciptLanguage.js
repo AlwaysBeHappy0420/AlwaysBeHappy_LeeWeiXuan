@@ -1,7 +1,7 @@
 const projectLanguage = {
   en: {
     AXERAS: {
-      title: "AXERAS",
+      title: '<strong id="top">AXERAS</strong>',
       projectDesc: ' <a href="https://store.steampowered.com/app/3873770/AXERAS/" target="_blank">AXERAS</a> is a turn-based tactical military SRPG developed by <a href="https://x.com/InverseAtelier" target="_blank">Inverse Atelier</a>.'
       +"<br>This project is heavily relying on AI movement where <a>GOAP</a> is implemented."
       +"<br><br>"
@@ -21,7 +21,7 @@ const projectLanguage = {
       +"<br><br>"
       ,
       desc: [
-        "This is project 1",
+        "This is the list that I have done for the AI target selection, including attacking player, covering teammates",
         "This is project 2",
         "This is Project 3",
         "This is Project 4",
@@ -43,9 +43,9 @@ const projectLanguage = {
         "Images/AXERAS/ResultScreenVideo.mp4"],
     },
     VirtualEscape: {
-      title: "Virtual Escape",
+      title: '<strong id="top">VirtualEscape</strong>',
       projectDesc:
-      '<a id="top" href="https://alwaysbehappy.itch.io/virtual-escape" target="_blank">Virtual Escape</a> is a 2D puzzle-platformer, '
+      '<a href="https://alwaysbehappy.itch.io/virtual-escape" target="_blank">Virtual Escape</a> is a 2D puzzle-platformer, '
       +'<br>where players must die to create corpses in order to solve puzzles.'
       +'<br>This project was my <a>Final Year Project (FYP)</a>, which I completed within <a>12 weeks</a>.'
       +'<br>My role in this project was the <a>sole Game Programmer</a>,'
@@ -119,7 +119,7 @@ const projectLanguage = {
 
   zh: {
     AXERAS: {
-      title: "AXERAS",
+      title: '<strong id="top">AXERAS</strong>',
       projectDesc:' <a href="https://store.steampowered.com/app/3873770/AXERAS/" target="_blank">AXERAS</a> 是一款由<a href="https://x.com/InverseAtelier" target="_blank">Inverse Atelier</a>开发的回合制战术军事类 SRPG。'
       +"<br>本项目高度依赖 AI 行动系统，并且依靠 <a>GOAP</a>来完成基本的AI指令。"
       +"<br><br>"
@@ -162,9 +162,9 @@ const projectLanguage = {
         "Images/AXERAS/ResultScreenVideo.mp4"],
     },
     VirtualEscape: {
-      title: "Corpse Puzzle Platformer",
+      title: '<strong id="top">Virtual Escape</strong>',
       projectDesc:
-      '<a id= "top" href="https://alwaysbehappy.itch.io/virtual-escape" target="_blank">Virtual Escape</a> 是一款2D解谜平台游戏，'
+      '<a href="https://alwaysbehappy.itch.io/virtual-escape" target="_blank">Virtual Escape</a> 是一款2D解谜平台游戏，'
       +'<br>玩家必须通过死亡并制造尸体来解开谜题。'
       +'<br>该项目是我在 <a>12周</a> 内完成的 <a>Final Year Project（FYP）</a>。'
       +'<br>我在项目中担任 <a>唯一的游戏程序员</a>，'
@@ -237,7 +237,7 @@ const projectLanguage = {
 
   jp: {
     AXERAS: {
-      title: "AXERAS",
+      title: '<strong id="top">AXERAS</strong>',
       projectDesc: ' <a href="https://store.steampowered.com/app/3873770/AXERAS/" target="_blank">AXERAS</a> は、<a href="https://x.com/InverseAtelier" target="_blank">Inverse Atelier</a>が開発しているターン制タクティカル・ミリタリー系SRPGです。'
       +"<br>本プロジェクトでは<a> GOAP</a> を実装して、AIの行動ロジックが中核となっております。"
       +"<br><br>"
@@ -280,9 +280,9 @@ const projectLanguage = {
         "Images/AXERAS/ResultScreenVideo.mp4"],
     },
     VirtualEscape: {
-      title: "Corpse Puzzle Platformer",
+      title: '<strong id="top">Virtual Escape</strong>',
       projectDesc:
-      '<a id="top" href="https://alwaysbehappy.itch.io/virtual-escape" target="_blank">Virtual Escape</a> は2Dパズルプラットフォーマーゲームです。'
+      '<a href="https://alwaysbehappy.itch.io/virtual-escape" target="_blank">Virtual Escape</a> は2Dパズルプラットフォーマーゲームです。'
       +'<br>プレイヤーは死亡して死体を生成し、それを使ってパズルを解くのです。'
       +'<br>このプロジェクトは、<a>12週間</a> で完成させた私の <a>Final Year Project（FYP）</a> です。'
       +'<br>私は <a>唯一のゲームプログラマー</a> として、'
