@@ -45,7 +45,7 @@ const projectLanguage = {
     VirtualEscape: {
       title: "Virtual Escape",
       projectDesc:
-      '<a href="https://alwaysbehappy.itch.io/virtual-escape" target="_blank">Virtual Escape</a> is a 2D puzzle-platformer, '
+      '<a id="top" href="https://alwaysbehappy.itch.io/virtual-escape" target="_blank">Virtual Escape</a> is a 2D puzzle-platformer, '
       +'<br>where players must die to create corpses in order to solve puzzles.'
       +'<br>This project was my <a>Final Year Project (FYP)</a>, which I completed within <a>12 weeks</a>.'
       +'<br>My role in this project was the <a>sole Game Programmer</a>,'
@@ -64,11 +64,56 @@ const projectLanguage = {
       +'<br>It follows principles like <i><b class="overlay-content-ap">SOLID, MVP</b></i> etc. as well.'
       +'<br>Due to <i><b class="overlay-content-ap">Time Constraints</b></i>, some parts have been hard-coded to meet the deadline.'
       +'<br>Improvements can be made if I have had more time.</div>'
+      +'<br><a href="#Code">Bring me to development part</a>'
       ,
 
-      desc: ["A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic."],
+      desc: [
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//1
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//2
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//3
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//4
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//5
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//6
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//7
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//8
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//9
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//10
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//11
+        'A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br><br><br><br><br><br><br><h4><div id="Code">Coding Part</div></h4><br><h4 ><a href="#top">Bring me to the top</a></h4>',
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//13
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//14
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//15
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//16
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//17
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//18
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//19
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//20
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//21
+      ],
       image: 
-      ["platformer.jpg"],
+      [
+        "Images/VirtualEscape/Gameplay.mp4",//1
+        "Images/VirtualEscape/MainMenu.png",//2
+        "Images/VirtualEscape/level1.png",//3
+        "Images/VirtualEscape/level2.png",//4
+        "Images/VirtualEscape/level3.png",//5
+        "Images/VirtualEscape/Settings.png",//6
+        "Images/VirtualEscape/MoreOptions.png",//7
+        "Images/VirtualEscape/LevelSelection.png",//8
+        "Images/VirtualEscape/PauseMenu.mp4",//9
+        "Images/VirtualEscape/WalkInCutscene.mp4",//10
+        "Images/VirtualEscape/TriggerObject.mp4",//11
+        "Images/VirtualEscape/CameraMovement.mp4",//12
+        "Images/VirtualEscape/GameSceneManager.png",//13
+        "Images/VirtualEscape/GameEventManager.png",//14
+        "Images/VirtualEscape/GameEventInfo.png",//15
+        "Images/VirtualEscape/Sequenceabstract.png",//16
+        "Images/VirtualEscape/DialogueSequence.png",//17
+        "Images/VirtualEscape/Director.png",//18
+        "Images/VirtualEscape/Obstacle.png",//19
+        "Images/VirtualEscape/ObstacleSample.png",//20
+        "Images/VirtualEscape/SaveSystem.png",//21
+      ],
     },
   },
 
@@ -119,7 +164,7 @@ const projectLanguage = {
     VirtualEscape: {
       title: "Corpse Puzzle Platformer",
       projectDesc:
-      '<a href="https://alwaysbehappy.itch.io/virtual-escape" target="_blank">Virtual Escape</a> 是一款2D解谜平台游戏，'
+      '<a id= "top" href="https://alwaysbehappy.itch.io/virtual-escape" target="_blank">Virtual Escape</a> 是一款2D解谜平台游戏，'
       +'<br>玩家必须通过死亡并制造尸体来解开谜题。'
       +'<br>该项目是我在 <a>12周</a> 内完成的 <a>Final Year Project（FYP）</a>。'
       +'<br>我在项目中担任 <a>唯一的游戏程序员</a>，'
@@ -138,9 +183,55 @@ const projectLanguage = {
       +'<br>同时也遵循了 <i><b class="overlay-content-ap">SOLID 原则、MVP 架构</b></i> 等软件设计理念。'
       +'<br>由于 <i><b class="overlay-content-ap">时间限制</b></i>，部分内容为了赶进度而采用了硬编码方式实现。'
       +'<br>如果有更多时间，该项目仍有进一步优化与改进的空间。</div>'
+      +'<br><a href="#Code">到游戏开发部分</a>'
       ,
-      desc: ["A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic."],
-      image: ["platformer.jpg"],
+      desc: [
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//1
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//2
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//3
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//4
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//5
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//6
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//7
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//8
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//9
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//10
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//11
+        'A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br><br><br><br><br><br><br><h4><div id="Code">Coding Part</div></h4><br><h4 ><a href="#top">Bring me to the top</a></h4>',
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//13
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//14
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//15
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//16
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//17
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//18
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//19
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//20
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//21
+      ],
+      image: 
+      [
+        "Images/VirtualEscape/Gameplay.mp4",//1
+        "Images/VirtualEscape/MainMenu.png",//2
+        "Images/VirtualEscape/level1.png",//3
+        "Images/VirtualEscape/level2.png",//4
+        "Images/VirtualEscape/level3.png",//5
+        "Images/VirtualEscape/Settings.png",//6
+        "Images/VirtualEscape/MoreOptions.png",//7
+        "Images/VirtualEscape/LevelSelection.png",//8
+        "Images/VirtualEscape/PauseMenu.mp4",//9
+        "Images/VirtualEscape/WalkInCutscene.mp4",//10
+        "Images/VirtualEscape/TriggerObject.mp4",//11
+        "Images/VirtualEscape/CameraMovement.mp4",//12
+        "Images/VirtualEscape/GameSceneManager.png",//13
+        "Images/VirtualEscape/GameEventManager.png",//14
+        "Images/VirtualEscape/GameEventInfo.png",//15
+        "Images/VirtualEscape/Sequenceabstract.png",//16
+        "Images/VirtualEscape/DialogueSequence.png",//17
+        "Images/VirtualEscape/Director.png",//18
+        "Images/VirtualEscape/Obstacle.png",//19
+        "Images/VirtualEscape/ObstacleSample.png",//20
+        "Images/VirtualEscape/SaveSystem.png",//21
+      ],
     },
   },
 
@@ -191,7 +282,7 @@ const projectLanguage = {
     VirtualEscape: {
       title: "Corpse Puzzle Platformer",
       projectDesc:
-      '<a href="https://alwaysbehappy.itch.io/virtual-escape" target="_blank">Virtual Escape</a> は2Dパズルプラットフォーマーゲームです。'
+      '<a id="top" href="https://alwaysbehappy.itch.io/virtual-escape" target="_blank">Virtual Escape</a> は2Dパズルプラットフォーマーゲームです。'
       +'<br>プレイヤーは死亡して死体を生成し、それを使ってパズルを解くのです。'
       +'<br>このプロジェクトは、<a>12週間</a> で完成させた私の <a>Final Year Project（FYP）</a> です。'
       +'<br>私は <a>唯一のゲームプログラマー</a> として、'
@@ -210,10 +301,56 @@ const projectLanguage = {
       +'<br><br>さらに、<i><b class="overlay-content-ap">SOLID原則、MVPアーキテクチャ</b></i> などのソフトウェア設計原則に従い、<br>保守性・拡張性の高いコードを構築しました。'
       +'<br><br>限られた <i><b class="overlay-content-ap">開発期間</b></i> の中で、一部は進捗優先でハードコーディングしていますが、'
       +'<br>時間があればさらなる改善・最適化が可能です。</div>'
+      +'<br><a href="#Code">ゲーム開発の詳細へ</a>'
       ,
 
-      desc: ["A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic."],
-      image: ["platformer.jpg"],
+      desc: [
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//1
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//2
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//3
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//4
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//5
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//6
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//7
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//8
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//9
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//10
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//11
+        'A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br><br><br><br><br><br><br><h4><div id="Code">Coding Part</div></h4><br><h4 ><a href="#top">Bring me to the top</a></h4>',
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//13
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//14
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//15
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//16
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//17
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//18
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//19
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//20
+        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//21
+      ],
+      image: 
+      [
+        "Images/VirtualEscape/Gameplay.mp4",//1
+        "Images/VirtualEscape/MainMenu.png",//2
+        "Images/VirtualEscape/level1.png",//3
+        "Images/VirtualEscape/level2.png",//4
+        "Images/VirtualEscape/level3.png",//5
+        "Images/VirtualEscape/Settings.png",//6
+        "Images/VirtualEscape/MoreOptions.png",//7
+        "Images/VirtualEscape/LevelSelection.png",//8
+        "Images/VirtualEscape/PauseMenu.mp4",//9
+        "Images/VirtualEscape/WalkInCutscene.mp4",//10
+        "Images/VirtualEscape/TriggerObject.mp4",//11
+        "Images/VirtualEscape/CameraMovement.mp4",//12
+        "Images/VirtualEscape/GameSceneManager.png",//13
+        "Images/VirtualEscape/GameEventManager.png",//14
+        "Images/VirtualEscape/GameEventInfo.png",//15
+        "Images/VirtualEscape/Sequenceabstract.png",//16
+        "Images/VirtualEscape/DialogueSequence.png",//17
+        "Images/VirtualEscape/Director.png",//18
+        "Images/VirtualEscape/Obstacle.png",//19
+        "Images/VirtualEscape/ObstacleSample.png",//20
+        "Images/VirtualEscape/SaveSystem.png",//21
+      ],
     },
   },
 };

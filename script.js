@@ -132,7 +132,7 @@ document.addEventListener("keydown", (e) => {
 
 //set default language
 document.addEventListener("DOMContentLoaded", () => {
-  setLanguage("en");
+  setLanguage("jp");
   openProject("VirtualEscape");
 });
 

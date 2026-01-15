@@ -418,6 +418,7 @@ footer {
   border-radius: 999px;
   border: none;
   cursor: pointer;
+  color: #000000;
 }
 
 .options {
