@@ -44,8 +44,26 @@ const projectLanguage = {
     },
     VirtualEscape: {
       title: "Virtual Escape",
-      projectDesc: "Virtual Escape is a 2D puzzle-solving platformer, "
-      +"<br>where player needs to die to generate corpse to solve the puzzles."
+      projectDesc:
+      '<a href="https://alwaysbehappy.itch.io/virtual-escape" target="_blank">Virtual Escape</a> is a 2D puzzle-platformer, '
+      +'<br>where players must die to create corpses in order to solve puzzles.'
+      +'<br>This project was my <a>Final Year Project (FYP)</a>, which I completed within <a>12 weeks</a>.'
+      +'<br>My role in this project was the <a>sole Game Programmer</a>,'
+      +'<br>which required me to build a <a>clear, flexible and well-structured codebase</a>.'
+      +"<br><br><br>"
+      +"<h4>My Tasks:</h4>"
+      +"<br>· Responsible for <a>managing the project</a>"
+      +"<br>· Responsible for <a>developing the whole codebase</a>"
+      +"<br>· Created all <a>User Interface(UI)</a> including <a>Dialogue, PauseMenu</a>, etc."
+      +"<br>· Visual Effects Design: <a>Lighting, PostProcessing, ParticleSystem</a>, etc."
+      +"<br>· <a>Code-based Cutscene & Animation</a>"
+      +"<br>· Others: SaveSystem, EventSystem, CameraMovement in Math, etc."
+      +"<br><br><br>"
+      +"<h4>Intro:</h4>"
+      +'<br><div class="overlay-content-aps">This project codebase follows <i><b class="overlay-content-ap">Singleton, Abstract Factory, Observer, Dependency Injection</b></i> etc. '
+      +'<br>It follows principles like <i><b class="overlay-content-ap">SOLID, MVP</b></i> etc. as well.'
+      +'<br>Due to <i><b class="overlay-content-ap">Time Constraints</b></i>, some parts have been hard-coded to meet the deadline.'
+      +'<br>Improvements can be made if I have had more time.</div>'
       ,
 
       desc: ["A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic."],
@@ -99,8 +117,29 @@ const projectLanguage = {
     },
     VirtualEscape: {
       title: "Corpse Puzzle Platformer",
-      desc: "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.",
-      image: "platformer.jpg",
+      projectDesc:
+      '<a href="https://alwaysbehappy.itch.io/virtual-escape" target="_blank">Virtual Escape</a> 是一款2D解谜平台游戏，'
+      +'<br>玩家必须通过死亡并制造尸体来解开谜题。'
+      +'<br>该项目是我在 <a>12周</a> 内完成的 <a>Final Year Project（FYP）</a>。'
+      +'<br>我在项目中担任 <a>唯一的游戏程序员</a>，'
+      +'<br>这要求我构建一个 <a>清晰、灵活且结构良好的代码框架</a>。'
+      +"<br><br><br>"
+      +"<h4>职责：</h4>"
+      +"<br>· 负责 <a>项目管理</a>"
+      +"<br>· 负责 <a>整个代码架构的开发</a>"
+      +"<br>· 制作所有 <a>用户界面(UI)</a>，包括 <a>对话系统、暂停菜单</a> 等"
+      +"<br>· 视觉效果设计：<a>光照、后处理、粒子系统</a> 等"
+      +"<br>· <a>基于代码的过场动画与角色动画</a>"
+      +"<br>· 其他：存档系统、事件系统、基于数学的摄像机控制 等"
+      +"<br><br><br>"
+      +"<h4>简介：</h4>"
+      +'<br><div class="overlay-content-aps">本项目的代码架构采用了 <i><b class="overlay-content-ap">Singleton、Abstract Factory、Observer、Dependency Injection</b></i> 等设计模式。'
+      +'<br>同时也遵循了 <i><b class="overlay-content-ap">SOLID 原则、MVP 架构</b></i> 等软件设计理念。'
+      +'<br>由于 <i><b class="overlay-content-ap">时间限制</b></i>，部分内容为了赶进度而采用了硬编码方式实现。'
+      +'<br>如果有更多时间，该项目仍有进一步优化与改进的空间。</div>'
+      ,
+      desc: ["A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic."],
+      image: ["platformer.jpg"],
     },
   },
 
@@ -150,8 +189,30 @@ const projectLanguage = {
     },
     VirtualEscape: {
       title: "Corpse Puzzle Platformer",
-      desc: "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.",
-      image: "platformer.jpg",
+      projectDesc:
+      '<a href="https://alwaysbehappy.itch.io/virtual-escape" target="_blank">Virtual Escape</a> は2Dパズルプラットフォーマーゲームです。'
+      +'<br>プレイヤーは死亡して死体を生成し、それを使ってパズルを解くのです。'
+      +'<br>このプロジェクトは、<a>12週間</a> で完成させた私の <a>Final Year Project（FYP）</a> です。'
+      +'<br>私は <a>唯一のゲームプログラマー</a> として、'
+      +'<br>コードベース全体の設計・実装・最適化を担当しました。'
+      +"<br><br><br>"
+      +"<h4>担当業務：</h4>"
+      +"<br>· <a>プロジェクト管理</a> 全般"
+      +"<br>· <a>コードベース全体の設計・開発</a>"
+      +"<br>· <a>ユーザー インターフェース(UI)</a> の作成"
+      +"<br>· ビジュアルエフェクト設計：<a>ライティング、ポストプロセッシング</a> 等"
+      +"<br>· <a>コードによるカットシーン・アニメーション</a>"
+      +"<br>· その他：セーブシステム、イベントシステム、カメラ制御 等"
+      +"<br><br><br>"
+      +"<h4>技術概要：</h4>"
+      +'<br><div class="overlay-content-aps">本プロジェクトでは、<i><b class="overlay-content-ap">Singleton、Abstract Factory、Observer、Dependency Injection</b></i> <br>などのデザインパターンを適用しています。'
+      +'<br><br>さらに、<i><b class="overlay-content-ap">SOLID原則、MVPアーキテクチャ</b></i> などのソフトウェア設計原則に従い、<br>保守性・拡張性の高いコードを構築しました。'
+      +'<br><br>限られた <i><b class="overlay-content-ap">開発期間</b></i> の中で、一部は進捗優先でハードコーディングしていますが、'
+      +'<br>時間があればさらなる改善・最適化が可能です。</div>'
+      ,
+
+      desc: ["A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic."],
+      image: ["platformer.jpg"],
     },
   },
 };
