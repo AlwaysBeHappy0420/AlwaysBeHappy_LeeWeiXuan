@@ -75,32 +75,33 @@ desc: [
       +'<br>It follows principles like <i><b class="overlay-content-ap">SOLID, MVP</b></i> etc. as well.'
       +'<br>Due to <i><b class="overlay-content-ap">Time Constraints</b></i>, some parts have been hard-coded to meet the deadline.'
       +'<br>Improvements can be made if I have had more time.</div>'
-      +'<br><a href="#Code">Bring me to development part</a>'
+      +'<br><a href="https://github.com/AlwaysBeHappy0420/VirtualEscape_FYP2025" target="_blank">Detailed Version</a> is in my Github, Feel free to check out.</div>'
+      +'<br><br><br><a href="#Code">Bring me to development part</a>'
       ,
+desc: [
+  "This shows the core gameplay of the project, where the player uses corpses to solve puzzles.<br>The game takes many references from Persona 5 Royal, especially in the UI design.",//1
+  "This is the game’s main menu, featuring buttons with different functions.<br>By placing it in a 3D space with environmental lighting and post-processing effects,<br>it achieves a stronger visual result.<br>",//2
+  "The layout I designed for Level 1.<br>",//3
+  "The layout I designed for Level 2.<br>",//4
+  "The layout I designed for Level 3.<br>There are more levels, but they can’t all be shown here.",//5
+  "These are the game settings. More options are available and will be introduced later.<br>The settings data is stored using ScriptableObjects to keep runtime records.",//6
+  "Players have more control over the game, such as changing key bindings.<br>Text speed can also be adjusted since this game focuses heavily on UI.<br>There are also some smaller options for players to customize.",//7
+  "The level selection panel allows players to save their progress.<br>This is stored in a static class, which avoids the time needed to connect to a server.<br>",//8
+  "The pause menu is created using animations when the player presses the pause button.<br>",//9
+  "Cutscenes are implemented through code.<br>By using a predefined linked-list sequence system for each level,<br>many events can be set up before the gameplay starts.",//10
+  "TriggerObjects are part of the core system.<br>Instead of using Unity’s OnTriggerEnter directly, TriggerObjects provide a more flexible approach,<br>since they inherit from an abstract class and are easier to manage and track.<br>",//11
+  'Camera movement is handled by adjusting the camera’s size and position.<br>By calculating relative positions, the camera finds a suitable view for each level.<br><br><br><br><br><br><br><h4><div id="Code">Coding Part</div></h4><br><h4 ><a href="#top">Bring me to the top</a></h4>',
+  "All scripts go through the GameSceneManager.<br>Whenever one script needs to call another, it does so through the GameSceneManager.<br>At the same time, all functions follow a rule of only updating when the player provides input.<br>The Update function is avoided, as it often consumes unnecessary memory.",//13
+  "There are many elements in a scene that may need to respond at the same time.<br>The Game Events Manager provides better control over these events.<br>Any object that needs to react must listen for specific events.<br>When an event is triggered, all listeners respond simultaneously.",//14
+  "Since there are multiple levels, EventInfo helps determine which events should occur in each level.<br>This reduces the workload for developers when designing stages.<br>",//15
+  "This is the abstract Sequence class, which only contains Execute and Finished functions.<br>",//16
+  "This is an example of a sequence, such as dialogue.<br>There are others, like lighting control and level text animations.<br>Each sequence script only contains its own functions.<br>The Execute function starts from the beginning, and before the sequence finishes, player input<br>can move to the next dialogue using a pointer in a list that links to the next dialogue box<br>which is the next sequence script.",//17
+  "The Director script runs sequences and TriggerObjects.<br>By checking the sequence status, it pauses execution until the current sequence finishes, up to the final one.<br>For TriggerObjects, it removes any that have already been triggered along with their sequences.",//18
+  "This is the abstract Obstacle script.<br>Since obstacles often trigger events in the game, this serves as an important base class.<br>",//19
+  "An example of an obstacle is FlameThrowerBase.<br>This can trigger a 'Destroy Corpse' event to remove the corpse.<br>",//20
+  "The save system records the player’s position,<br>since checkpoints are an important part of solving puzzles in the gameplay.<br><br><br><br>",//21
+],
 
-      desc: [
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//1
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//2
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//3
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//4
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//5
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//6
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//7
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//8
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//9
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//10
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//11
-        'A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br><br><br><br><br><br><br><h4><div id="Code">Coding Part</div></h4><br><h4 ><a href="#top">Bring me to the top</a></h4>',
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//13
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//14
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//15
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//16
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//17
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//18
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//19
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//20
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//21
-      ],
       image: 
       [
         "Images/VirtualEscape/Gameplay.mp4",//1
@@ -206,31 +207,33 @@ desc: [
       +'<br>同时也遵循了 <i><b class="overlay-content-ap">SOLID 原则、MVP 架构</b></i> 等软件设计理念。'
       +'<br>由于 <i><b class="overlay-content-ap">时间限制</b></i>，部分内容为了赶进度而采用了硬编码方式实现。'
       +'<br>如果有更多时间，该项目仍有进一步优化与改进的空间。</div>'
-      +'<br><a href="#Code">到游戏开发部分</a>'
+      +'<br><a href="https://github.com/AlwaysBeHappy0420/VirtualEscape_FYP2025" target="_blank">详细版本</a>在Github中。请随意查看。</div>'
+      +'<br><br><br><a href="#Code">到游戏开发部分</a>'
       ,
-      desc: [
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//1
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//2
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//3
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//4
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//5
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//6
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//7
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//8
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//9
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//10
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//11
-        'A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br><br><br><br><br><br><br><h4><div id="Code">Coding Part</div></h4><br><h4 ><a href="#top">Bring me to the top</a></h4>',
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//13
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//14
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//15
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//16
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//17
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//18
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//19
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//20
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//21
-      ],
+desc: [
+  "这里展示了项目的核心玩法，玩家需要利用尸体来解谜。<br>本游戏在很多方面参考了《女神异闻录5 皇家版》，尤其是在 UI 设计上。",//1
+  "这是游戏的主菜单，包含具有不同功能的按钮。<br>通过将其放置在 3D 空间中，并结合环境光与后期处理效果，<br>可以获得更好的视觉表现。<br>",//2
+  "我为第一关设计的关卡布局。<br>",//3
+  "我为第二关设计的关卡布局。<br>",//4
+  "我为第三关设计的关卡布局。<br>还有更多关卡，但无法全部在这里展示。",//5
+  "这些是游戏的设置选项。之后还会加入更多内容。<br>设置数据使用 ScriptableObject 进行存储，以便在运行时记录。",//6
+  "玩家可以对游戏进行更多控制，例如修改按键绑定。<br>由于本游戏同样注重 UI，文本显示速度也可以调整。<br>此外，还有一些细节选项供玩家自行决定。",//7
+  "关卡选择面板允许玩家保存游戏进度。<br>这些数据存储在一个静态类中，从而避免连接服务器所花费的时间。<br>",//8
+  "当玩家按下暂停键时，暂停菜单会通过动画形式呈现。<br>",//9
+  "过场动画通过代码实现。<br>通过为每个关卡使用预先定义的链表式序列系统，<br>可以在游戏开始前设置大量事件。",//10
+  "TriggerObjects 是核心系统的一部分。<br>相比直接使用 Unity 的 OnTriggerEnter，TriggerObjects 提供了更灵活的方式，<br>因为它们继承自Abstract Class，更易于管理和追踪。<br>",//11
+  '镜头移动通过调整摄像机的大小和位置来实现。<br>通过计算相对位置，摄像机会为当前关卡找到合适的视角。<br><br><br><br><br><br><br><h4><div id="Code">代码部分</div></h4><br><h4 ><a href="#top">返回顶部</a></h4>',
+  "所有脚本都需要通过 GameSceneManager。<br>当一个脚本需要调用另一个脚本时，必须先通过 GameSceneManager。<br>同时，所有函数都遵循只有在玩家输入时才更新的原则。<br>尽量避免使用 Update 函数，因为它通常会消耗不必要的内存。",//13
+  "在一个场景中，可能会有多个对象需要同时检测并响应行为。<br>Game Events Manager 可以更好地管理这些事件。<br>任何需要作出反应的对象都必须监听对应事件。<br>当事件被触发时，所有监听者将同时执行动作。",//14
+  "由于存在多个关卡，EventInfo 可以帮助决定哪些事件应该在对应关卡中发生。<br>这能减少开发者在设计关卡时的工作量。<br>",//15
+  "这是 Sequence的Abstract Class ，只包含 Execute 和 Finished 两个函数。<br>",//16
+  "这是一个Sequence的示例，例如对话。<br>还有其他类型，比如灯光控制和关卡文字动画。<br>每个Sequence脚本只包含自身相关的函数。<br>Execute 函数会从开头执行，在Sequence结束之前，玩家可以通过输入，<br>根据链表中的Pointer跳转到下一个对话框，<br>也就是下一个Sequence脚本。",//17
+  "Director 脚本负责执行Sequence和 TriggerObjects。<br>通过检测Sequence状态，它会暂停流程直到当前Sequence结束，直到最后一个Sequence完成。<br>对于 TriggerObjects，它会移除所有已经被触发过的对象。",//18
+  "这是 Obstacle 的Abstract Class。<br>由于游戏中障碍物经常会触发事件，因此这是一个非常重要的基类。<br>",//19
+  "FlameThrowerBase 是一个Obstacle的示例。<br>它可以触发“Destroy Corpse”事件来销毁尸体。<br>",//20
+  "存档系统用于记录玩家的位置，<br>因为检查点是解谜玩法中的一个重要组成部分。<br><br><br><br>",//21
+],
+
       image: 
       [
         "Images/VirtualEscape/Gameplay.mp4",//1
@@ -295,7 +298,7 @@ desc: [
   "メインメニューの最終結果です。すべてのアニメーションはコードで実装しています。",
   "メインメニューのアニメーションを実現するためのコードです。<br>インターフェースを参照として使用しています。<br>ポインターイベントに基づいて処理を分岐させています。",
   "結果画面です。こちらもすべてのアニメーションはコードで実装しています。<br>",
-  "結果画面のアニメーションシーケンスです。 <br>WaitUntil 関数を使用して、アニメーション完了のシグナルを待機しています。",
+  "結果画面のアニメーションSequenceスです。 <br>WaitUntil 関数を使用して、アニメーション完了のシグナルを待機しています。",
   "具体的なアニメーション実装コードです。 <br>すべてコードで処理されており、相対位置を計算してアニメーションを実現しています。<br><br><br><br>",
 
 ],
@@ -336,32 +339,34 @@ desc: [
       +'<br><br>さらに、<i><b class="overlay-content-ap">SOLID原則、MVPアーキテクチャ</b></i> などのソフトウェア設計原則に従い、<br>保守性・拡張性の高いコードを構築しました。'
       +'<br><br>限られた <i><b class="overlay-content-ap">開発期間</b></i> の中で、一部は進捗優先でハードコーディングしていますが、'
       +'<br>時間があればさらなる改善・最適化が可能です。</div>'
-      +'<br><a href="#Code">ゲーム開発の詳細へ</a>'
+      +'<br><a href="https://github.com/AlwaysBeHappy0420/VirtualEscape_FYP2025" target="_blank">詳細なバージョン</a>はGitHubにあります。ぜひご覧ください。</div>'
+      +'<br><br><br><a href="#Code">ゲーム開発の詳細へ</a>'
       ,
 
-      desc: [
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//1
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//2
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//3
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//4
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//5
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//6
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//7
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//8
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//9
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//10
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//11
-        'A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br><br><br><br><br><br><br><h4><div id="Code">Coding Part</div></h4><br><h4 ><a href="#top">Bring me to the top</a></h4>',
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//13
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//14
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//15
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//16
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//17
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//18
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//19
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//20
-        "A narrative-driven puzzle game inspired by Divine Comedy, using death as a core mechanic.<br>",//21
-      ],
+desc: [
+  "これはプロジェクトのコアゲームプレイを示しています。プレイヤーは遺体を使ってパズルを解きます。<br>ゲームは特にUIデザインにおいて『ペルソナ5 ロイヤル』から多くの要素を参考にしています。",//1
+  "これはゲームのメインメニューで、さまざまな機能を持つボタンが配置されています。<br>3D空間に配置し、環境光やポストプロセス効果を加えることで、<br>より良いビジュアル結果を得られます。<br>",//2
+  "私が設計したレベル1のレイアウト。<br>",//3
+  "私が設計したレベル2のレイアウト。<br>",//4
+  "私が設計したレベル3のレイアウト。<br>他にも多くのレベルがありますが、ここではすべて表示できません。",//5
+  "これはゲームの設定です。さらに多くのオプションがあり、後で紹介されます。<br>設定データは ScriptableObject を使って保存され、ランタイムで記録されます。",//6
+  "プレイヤーはキー設定の変更など、ゲームをより細かく制御できます。<br>UIに重点を置いたゲームのため、テキスト速度も調整可能です。<br>その他、プレイヤーが選択できる細かい設定もあります。",//7
+  "レベル選択パネルは、プレイヤーが進行状況を保存できるようにします。<br>これはStaticクラスに保存され、サーバーへ接続せずに時間を節約できます。<br>",//8
+  "Pausedメニューは、Escボタンを押したときにアニメーションで表示されます。<br>",//9
+  "カットシーンはコードで実装されています。<br>各レベルに対して事前定義されたリンクリスト式Sequenceを使用することで、<br>ゲーム開始前に多くのイベントを設定できます。",//10
+  "TriggerObjects はコアシステムの一部です。<br>Unity の OnTriggerEnter を直接使用する代わりに、TriggerObjects はより柔軟な方法を提供します。<br>抽象クラスを継承しているため、管理や追跡が容易です。<br>",//11
+  'カメラの移動は、カメラのサイズと位置を調整することで実現されます。<br>相対位置を計算することで、各レベルに適した視点をカメラが見つけます。<br><br><br><br><br><br><br><h4><div id="Code">コード部分</div></h4><br><h4 ><a href="#top">トップに戻る</a></h4>',//12
+  "すべてのスクリプトは GameSceneManager を経由します。<br>スクリプトが他のスクリプトを呼び出す場合、必ず GameSceneManager 経由で行います。<br>同時に、すべての関数はプレイヤー入力があった場合のみ更新されるルールに従います。<br>多くの場合、不要なメモリを消費するため、Update 関数の使用は避けております。",//13
+  "シーン内では、同時に複数の要素がアクションをチェックする必要があります。<br>Game Events Manager は、これらのイベントをより良く管理できます。<br>反応する必要のあるオブジェクトは、特定のイベントをリッスンする必要があります。<br>イベントがトリガーされると、すべてのリスナーが同時に動作します。",//14
+  "複数のレベルがあるため、EventInfo はどのイベントがどのレベルで発生するかを判断するのに役立ちます。<br>これにより、開発者がレベルを設計する際の作業負荷が軽減されます。<br>",//15
+  "これは抽象的な Sequence クラスで、Execute と Finished 関数のみを含みます。<br>",//16
+  "これはSequenceの例で、例えば会話です。<br>他にも、照明制御やレベルテキストのアニメーションなどがあります。<br>各Sequenceスクリプトは自身の関数のみを保持します。<br>Execute 関数は最初から開始し、Sequenceが終了する前にプレイヤー入力により、<br>リスト内のポインタを使って次のダイアログボックスに移動できます。<br>これは次のSequenceスクリプトでもあります。",//17
+  "Director は、Sequenceと TriggerObjects を実行します。<br>Sequenceの状態を確認し、現在のSequenceが終了するまで処理を一時停止します。最後のSequenceまで同様です。<br>TriggerObjects に関しては、すでにトリガーされたオブジェクトを削除します。",//18
+  "これは抽象的な Obstacle スクリプトです。<br>ゲーム内でObstacleはイベントを頻繁にトリガーするため、重要な基底クラスとなります。<br>",//19
+  "Obstacleの例として FlameThrowerBase があります。<br>これは『Destroy Corpse』イベントをトリガーして、遺体を消去することができます。<br>",//20
+  "セーブシステムはプレイヤーの位置を記録します。<br>チェックポイントはパズルを解く上で重要な要素だからです。<br><br><br><br>",//21
+],
+
       image: 
       [
         "Images/VirtualEscape/Gameplay.mp4",//1
