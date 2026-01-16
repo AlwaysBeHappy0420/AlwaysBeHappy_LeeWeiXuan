@@ -5,10 +5,6 @@ const projectLanguage = {
       projectDesc: ' <a href="https://store.steampowered.com/app/3873770/AXERAS/" target="_blank">AXERAS</a> is a turn-based tactical military SRPG developed by <a href="https://x.com/InverseAtelier" target="_blank">Inverse Atelier</a>.'
       +"<br>This project is heavily relying on AI movement where <a>GOAP</a> is implemented."
       +"<br><br>"
-      +"My role during internship(3 months) was to <a>support team members in their work</a>"
-      +"<br>which required me to <a>understand the entire project within a few weeks</a> and"
-      +"<br>adapt to the environment as soon as possible."
-      +"<br><br><br>"
       +'<h4>My tasks:</h4><div>'
       +"<br>·<a> Responsible for developing AI target-selection logic</a>"
       +"<br>· Refactored existing Scripts"
@@ -16,7 +12,7 @@ const projectLanguage = {
       +"<br>· Created <a>flexible AI control functions</a>"
       +"<br>· Created function to change Apperance Data for different models"
       +"<br>· Others: Voice-lines scripts/ Debugging/ Translation etc.</div>"
-      +"<br><br><br>"
+      +"<br>"
       +'<div class="overlay-content-attention">*ATTENTION: I cannot share original works here due to contract issue. Below are summarized version.</div>'
       +"<br><br>"
       ,
@@ -57,10 +53,9 @@ desc: [
       title: '<strong id="top">VirtualEscape</strong>',
       projectDesc:
       '<a href="https://alwaysbehappy.itch.io/virtual-escape" target="_blank">Virtual Escape</a> is a 2D puzzle-platformer, '
-      +'<br>where players must die to create corpses in order to solve puzzles.'
-      +'<br>This project was my <a>Final Year Project (FYP)</a>, which I completed within <a>12 weeks</a>.'
-      +'<br>My role in this project was the <a>sole Game Programmer</a>,'
-      +'<br>which required me to build a <a>clear, flexible and well-structured codebase</a>.'
+      +'where players use corpses to solve puzzles.'
+      +'<br>This project was my <a>Final Year Project (FYP)</a> completed within <a>12 weeks</a>.'
+      +'<br>My role in this project was the <a>sole Game Programmer</a>.'
       +"<br><br><br>"
       +'<h4>My Tasks:</h4><div>'
       +"<br>· Responsible for <a>managing the project</a>"
@@ -135,10 +130,6 @@ desc: [
       projectDesc:' <a href="https://store.steampowered.com/app/3873770/AXERAS/" target="_blank">AXERAS</a> 是一款由<a href="https://x.com/InverseAtelier" target="_blank">Inverse Atelier</a>开发的回合制战术军事类 SRPG。'
       +"<br>本项目高度依赖 AI 行动系统，并且依靠 <a>GOAP</a>来完成基本的AI指令。"
       +"<br><br>"
-      +"我在实习期间（3个月）的主要职责是 <a>协助团队成员完成他们的工作</a>"
-      +"<br>这要求我在几周内 <a>理解整个项目结构</a>，并且"
-      +"<br>尽快 <a>适应开发环境</a>。"
-      +"<br><br><br>"
       +'<h4>工作内容：</h4><div>'
       +"<br>· <a>负责开发 AI 目标选择逻辑</a>"
       +"<br>· 重构现有脚本"
@@ -146,7 +137,7 @@ desc: [
       +"<br>· 创建 <a>灵活的 AI 控制函数</a>"
       +"<br>· 创建用于更换不同模型外观数据的功能"
       +"<br>· 其他：语音脚本 / 调试 / 翻译 等</div>"
-      +"<br><br><br>"
+      +"<br>"
       +'<div class="overlay-content-attention">*注意：由于合约限制，我无法在此展示原始内容。以下为总结版本。</div>'
       +"<br><br>"
       ,
@@ -189,10 +180,9 @@ desc: [
       title: '<strong id="top">Virtual Escape</strong>',
       projectDesc:
       '<a href="https://alwaysbehappy.itch.io/virtual-escape" target="_blank">Virtual Escape</a> 是一款2D解谜平台游戏，'
-      +'<br>玩家必须通过死亡并制造尸体来解开谜题。'
+      +'玩家必须利用尸体来解开谜题。'
       +'<br>该项目是我在 <a>12周</a> 内完成的 <a>Final Year Project（FYP）</a>。'
-      +'<br>我在项目中担任 <a>唯一的游戏程序员</a>，'
-      +'<br>这要求我构建一个 <a>清晰、灵活且结构良好的代码框架</a>。'
+      +'<br>我在项目中担任 <a>唯一的游戏程序员</a>。'
       +"<br><br><br>"
       +'<h4>工作内容：</h4><div>'
       +"<br>· 负责 <a>项目管理</a>"
@@ -267,10 +257,6 @@ desc: [
       projectDesc: ' <a href="https://store.steampowered.com/app/3873770/AXERAS/" target="_blank">AXERAS</a> は、<a href="https://x.com/InverseAtelier" target="_blank">Inverse Atelier</a>が開発しているターン制タクティカル・ミリタリー系SRPGです。'
       +"<br>本プロジェクトでは<a> GOAP</a> を実装して、AIの行動ロジックが中核となっております。"
       +"<br><br>"
-      +"私のインターンシップ期間（3か月）における役割は、<a>チームメンバーの業務支援</a>でした。"
-      +"<br>そのため、短期間で <a>プロジェクト全体の構造を把握</a> し、"
-      +"<br>可能な限り早く <a>開発環境に適応すること</a> が求められました。"
-      +"<br><br><br>"
       +'<h4>担当業務：</h4><div>'
       +"<br>· <a>AIのターゲット選択ロジックの開発を担当</a>"
       +"<br>· 既存スクリプトのリファクタリング"
@@ -278,7 +264,7 @@ desc: [
       +"<br>· <a>柔軟性の高いAI制御関数の作成</a>"
       +"<br>· 各モデルに対応した外観データ切り替え機能の実装"
       +"<br>· その他：ボイス関連スクリプト作成 / デバッグ / 翻訳 など</div>"
-      +"<br><br><br>"
+      +"<br>"
       +'<div class="overlay-content-attention">※注意：契約上の理由により、原作業物を公開することはできません。以下は内容を要約したものです。</div>'
       +"<br><br>"
       ,
@@ -321,7 +307,7 @@ desc: [
       title: '<strong id="top">Virtual Escape</strong>',
       projectDesc:
       '<a href="https://alwaysbehappy.itch.io/virtual-escape" target="_blank">Virtual Escape</a> は2Dパズルプラットフォーマーゲームです。'
-      +'<br>プレイヤーは死亡して死体を生成し、それを使ってパズルを解くのです。'
+      +'プレイヤーは死体使ってパズルを解くのです。'
       +'<br>このプロジェクトは、<a>12週間</a> で完成させた私の <a>Final Year Project（FYP）</a> です。'
       +'<br>私は <a>唯一のゲームプログラマー</a> として、'
       +'<br>コードベース全体の設計・実装・最適化を担当しました。'
@@ -488,13 +474,13 @@ const translations = {
     contact_title: "联系我",
     WorkTitle:"当前进度",
     WorkContent:
-    "<b>已学习</b> - Unity 基础：Animator，C# 脚本，基础数学在 Unity 中的应用。<br>" +
-    "<b>已学习</b> - C/C++ 基础，HTML，CSS，JavaScript，PHP，MySQL。<br>" +
-    "<b>已学习</b> - 动画原理，游戏物理，数据结构与算法，基础 3D 建模。<br>" +
-    "<b>已学习</b> - 虚幻引擎Blueprint，手机游戏开发。<br>" +
-    "<b>已学习</b> - 脚本设计模式，Unity Renderer Feature 基础，Shader Graph，游戏 AI。<br>" +
-    "<b>已学习</b> - 实习。<br>" +
-    "<b>进行中</b> - 目前正在提升 Unity HLSL、Renderer Feature 以及 UE C/C++ 的技能"
+    '<img src="Images/tick.png" class="WorkContent-img">Unity 基础：Animator，C# 脚本，基础数学在 Unity 中的应用。<br>' +
+    '<img src="Images/tick.png" class="WorkContent-img">C/C++ 基础，HTML，CSS，JavaScript，PHP，MySQL。<br>' +
+    '<img src="Images/tick.png" class="WorkContent-img">动画原理，游戏物理，数据结构与算法，基础 3D 建模。<br>' +
+    '<img src="Images/tick.png" class="WorkContent-img">虚幻引擎Blueprint，手机游戏开发。<br>' +
+    '<img src="Images/tick.png" class="WorkContent-img">脚本设计模式，Unity Renderer Feature 基础，Shader Graph，游戏 AI。<br>' +
+    '<img src="Images/tick.png" class="WorkContent-img">实习。<br>' +
+    "<br><h3>进行中</h3><br>目前正在提升 Unity HLSL、Renderer Feature 以及 UE C/C++ 的技能"
 
   },
 
@@ -540,13 +526,13 @@ card03: "UTARを卒業",
     contact_title: "連絡先",
     WorkTitle:"現在の学習状況",
     WorkContent:
-    "<b>勉強済み</b> - Unity 基礎：Animator、C# スクリプト、Unity における基礎数学の実装。<br>" +
-    "<b>勉強済み</b> - C/C++ 基礎、HTML、CSS、JavaScript、PHP、MySQL。<br>" +
-    "<b>勉強済み</b> - アニメーション原理、ゲーム物理、データ構造とアルゴリズム、基本的な 3D モデリング。<br>" +
-    "<b>勉強済み</b> - UE Blueprint、モバイルゲーム開発。<br>" +
-    "<b>勉強済み</b> - デザインパターン、Unity Renderer Feature 基礎、Shader Graph、ゲーム AI。<br>" +
-    "<b>勉強済み</b> - インターンシップ。<br>" +
-    "<b>進行中</b> - Unity HLSL、Renderer Feature、および UE C/C++ のスキル向上に取り組んでいます"
+    '<img src="Images/tick.png" class="WorkContent-img">Unity 基礎：Animator、C# スクリプト、Unity における基礎数学の実装。<br>' +
+    '<img src="Images/tick.png" class="WorkContent-img">C/C++ 基礎、HTML、CSS、JavaScript、PHP、MySQL。<br>' +
+    '<img src="Images/tick.png" class="WorkContent-img">アニメーション原理、ゲーム物理、データ構造とアルゴリズム、基本的な 3D モデリング。<br>' +
+    '<img src="Images/tick.png" class="WorkContent-img">UE Blueprint、モバイルゲーム開発。<br>' +
+    '<img src="Images/tick.png" class="WorkContent-img">デザインパターン、Unity Renderer Feature 基礎、Shader Graph、ゲーム AI。<br>' +
+    '<img src="Images/tick.png" class="WorkContent-img">インターンシップ。<br>' +
+    "<br><h3>進行中</h3><br>Unity HLSL、Renderer Feature、および UE C/C++ のスキル向上に取り組んでいます"
 
   },
 };

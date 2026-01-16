@@ -57,6 +57,8 @@ function openProject(key) {
   overlayContent.insertBefore(br2, overlayContent.querySelector(".bottom-bar"));
 
   for (let i = 0; i < p.image.length; i++) {
+
+
     if (p.image[i].includes(".mp4")) {
       let vid = document.createElement("video");
       vid.controls = true; // show play/pause buttons
@@ -81,6 +83,7 @@ function openProject(key) {
       overlayContent.querySelector(".bottom-bar")
     );
 
+    
     let br1 = document.createElement("br");
     overlayContent.insertBefore(
       br1,
@@ -111,8 +114,15 @@ function closeProject() {
   document.body.style.overflow = "auto";
 }
 
+function openContent()
+{
+
+}
+
 const cards = document.querySelectorAll(".project-card");
 const mainBtn = document.getElementById("mainBtn");
+const homepage = document.getElementById("homepage");
+const homepagePanel = document.getElementById("homepagePanel");
 const languageIcon = document.getElementById("languageIcon");
 const languageOptionBox = document.getElementById("languageOptionBox");
 const optionBox = document.getElementById("optionsBox");
@@ -142,6 +152,11 @@ mainBtn.addEventListener("click", () => {
   if (languageOptionBox.classList.contains("show"))
     languageOptionBox.classList.toggle("show");
 });
+
+homepage.addEventListener("click",()=>{
+  homepagePanel.classList.toggle("show");
+});
+
 languageIcon.addEventListener("click", () => {
   languageOptionBox.classList.toggle("show");
   if (optionBox.classList.contains("show")) optionBox.classList.toggle("show");
@@ -152,8 +167,8 @@ window.addEventListener("load", handleScrollReveal);
 
 window.addEventListener("scroll", () => {
   if (optionBox.classList.contains("show")) optionBox.classList.toggle("show");
-  if (languageOptionBox.classList.contains("show"))
-    languageOptionBox.classList.toggle("show");
+  if (languageOptionBox.classList.contains("show"))languageOptionBox.classList.toggle("show");
+  if (homepagePanel.classList.contains("show")) homepagePanel.classList.toggle("show");
 
   // Text highlight effect
   const elements = document.querySelectorAll(".section h2"); // All section headings

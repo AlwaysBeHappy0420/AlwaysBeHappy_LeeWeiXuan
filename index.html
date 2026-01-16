@@ -19,6 +19,7 @@
     <!-- Navigation -->
     <header>
       <nav class="navbar">
+        <button id="homepage"><img src="Images/homepage.png"></button>
         <h1 class="logo">Lee Wei Xuan</h1>
         <ul class="nav-links">
           <div class="lang-switcher">
@@ -32,7 +33,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section id= "hero"class="hero">
       <h2 data-key="hero_title">Hello, This is <span>Lee Wei Xuan</span></h2>
       <p data-key="hero_desc">
         I create games, interactive experiences, and websites.
@@ -161,5 +162,15 @@
       <button onclick="setLanguage('zh')">中文</button>
       <button onclick="setLanguage('jp')">日本語</button>
     </div>
+
+    <div class="homepage" id="homepagePanel">
+<button onclick="location.href='#hero'">HomePage</button>
+<button onclick="location.href='#about'">About Me</button>
+<button onclick="location.href='#projects'">Projects</button>
+<button onclick="location.href='#currentWork'">Current Work</button>
+<button onclick="location.href='#contact'">Contact</button>
+    </div>
+
+    <a href="#hero" class="back-to-top">⬆ Top</a> 
   </body>
 </html>
