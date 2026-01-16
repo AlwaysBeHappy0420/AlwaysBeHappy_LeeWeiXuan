@@ -44,7 +44,33 @@
     <section id="about" class="section reveal">
       <h2 id="HoverEffect" data-key="about_title">About Me</h2>
       <p data-key="about_desc">description</p>
-      <p data-key="about_desc2">description</p>
+
+      <div class="timeline-h">
+
+        <div class="timeline-h-item">
+          <div class="dot"></div>
+          <div class="card">
+            <h3>202301</h3>
+            <p>Studied at UTAR</p>
+          </div>
+        </div>
+
+        <div class="timeline-h-item">
+          <div class="dot"></div>
+          <div class="card">
+            <h3>202506 - 202510</h3>
+            <p>Internship at <br>Inverse Atelier</p>
+          </div>
+        </div>
+
+        <div class="timeline-h-item">
+          <div class="dot"></div>
+          <div class="card">
+            <h3>202602</h3>
+            <p>Graduated from UTAR</p>
+          </div>
+        </div>
+      </div>
       <p data-key="about_desc3">description</p>
       <p data-key="about_desc4">description</p>
     </section>
@@ -56,22 +82,22 @@
         <button class="project-card" onclick="openProject('AXERAS')">
           <h1 data-key="project1_title">Project One</h1>
           <p data-key="project1_desc">A brief description of this project.</p>
-          <br><img src="Images/AXERAS/Axeras.jpg" width=75%>
+          <br /><img src="Images/AXERAS/Axeras.jpg" width="75%" />
         </button>
 
         <button class="project-card" onclick="openProject('VirtualEscape')">
           <h1 data-key="project2_title">Project Two</h1>
           <p data-key="project2_desc">A brief description of this project.</p>
-          <br><img src="Images/VirtualEscape/MainMenu.png" width=75%>
+          <br /><img src="Images/VirtualEscape/MainMenu.png" width="75%" />
         </button>
       </div>
     </section>
 
     <!-- Current Work -->
-     <section id="currentWork" class="section reveal">
+    <section id="currentWork" class="section reveal">
       <h2 data-key="WorkTitle"></h2>
       <p data-key="WorkContent"></p>
-     </section>
+    </section>
 
     <!-- Contact Section -->
     <section id="contact" class="section reveal">
@@ -105,8 +131,7 @@
       <h3>About</h3>
       <h3>Details</h3>
 
-      <div class="overlay-content" id ="overlay-content">
-
+      <div class="overlay-content" id="overlay-content">
         <div class="bottom-bar">
           <button onclick="closeProject()">Close</button>
         </div>

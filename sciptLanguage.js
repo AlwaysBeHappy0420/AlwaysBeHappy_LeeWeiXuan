@@ -523,7 +523,6 @@ const translations = {
       "・<b><i>物事を徹底的に追究する姿勢を強みとしており</i></b>、常に「なぜそう動くのか」という論理を理解することを大切にしています。。<br><br>" +
       "・<b><i>プレッシャーのかかる状況でも安定したパフォーマンスを発揮でき、期限を守ることを徹底しています。</i></b><br><br>",
     projects_title: "プロジェクト",
-    project1_title: "AXERAS（アックセラス）",
     project1_title: "AXERAS<br>（アックセラス）",
     project1_desc: "インターンシップ期間中に開発に参加したプロジェクト",
     project2_title: "Virtual Escape<br>（ヴァーチャル・エスケープ）",
