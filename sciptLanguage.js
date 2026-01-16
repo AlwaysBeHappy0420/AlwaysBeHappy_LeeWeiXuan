@@ -388,7 +388,7 @@ const translations = {
     hero_title: "Hello, This is <span>Lee Wei Xuan</span>",
     hero_desc:
       "I am a Malaysian game developer, and you’ve come to the right place if you’re looking for a strong and reliable one.",
-    view_work: "View My Work",
+    view_work: "Download Resume",
     about_title: "About Me",
     about_desc:
       'I\'m Lee Wei Xuan, and this is my <b>personal website</b> hosted on GitHub. It’s <a href="https://github.com/AlwaysBeHappy0420/AlwaysBeHappy_LeeWeiXuan" target="_blank">open source</a>, so feel free to use the template.<br>' +
@@ -439,7 +439,7 @@ const translations = {
     hero_title: "这里是 <span>李维旋</span> 的个人网站",
     hero_desc:
       "我是一名马来西亚的游戏开发者，如果你正在寻找一位有充足实力、值得信赖的游戏开发人员，这里是正确的选择。",
-    view_work: "查看我的作品",
+    view_work: "下载履历",
     about_title: "关于我",
     about_desc:
       '这是我，李维旋经由Github正经营着的 <b>个人网站</b>。 这个网站目前处于<a href="https://github.com/AlwaysBeHappy0420/AlwaysBeHappy_LeeWeiXuan" target="_blank">开源</a>状态, 倘若需要，可以直接下载。<br>' +
@@ -490,7 +490,7 @@ const translations = {
     hero_title: "<span>リ イセン</span> の個人サイト",
     hero_desc:
       "優秀で信頼できるゲーム開発者をお探しでしたら、ここはまさにうってつけの場所です。",
-    view_work: "作品を見る",
+    view_work: "履歴書をダウンロード",
     about_title: "自己紹介",
     about_desc:
       'ここは私、李維旋（リ イセン）がGithubを通じて運営している <b>個人サイト</b> です。このサイトは現在 <a href="https://github.com/AlwaysBeHappy0420/AlwaysBeHappy_LeeWeiXuan" target="_blank">オープンソース</a> として公開されており、必要であれば直接ダウンロード可能です。<br>' +

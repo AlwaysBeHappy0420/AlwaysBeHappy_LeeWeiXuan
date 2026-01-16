@@ -513,7 +513,7 @@ footer p{
 
 .back-to-top {
   position: fixed;
-  left: 20px;
+  right: 20px;
   bottom: 50%;
   transform: translateY(50%);
   padding: 12px 14px;
