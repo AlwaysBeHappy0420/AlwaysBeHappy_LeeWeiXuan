@@ -119,7 +119,7 @@ desc: [
         "Images/VirtualEscape/GameSceneManager.png",//13
         "Images/VirtualEscape/GameEventManager.png",//14
         "Images/VirtualEscape/GameEventInfo.png",//15
-        "Images/VirtualEscape/Sequenceabstract.png",//16
+        "Images/VirtualEscape/SequenceAbstract.png",//16
         "Images/VirtualEscape/DialogueSequence.png",//17
         "Images/VirtualEscape/Director.png",//18
         "Images/VirtualEscape/Obstacle.png",//19
@@ -251,7 +251,7 @@ desc: [
         "Images/VirtualEscape/GameSceneManager.png",//13
         "Images/VirtualEscape/GameEventManager.png",//14
         "Images/VirtualEscape/GameEventInfo.png",//15
-        "Images/VirtualEscape/Sequenceabstract.png",//16
+        "Images/VirtualEscape/SequenceAbstract.png",//16
         "Images/VirtualEscape/DialogueSequence.png",//17
         "Images/VirtualEscape/Director.png",//18
         "Images/VirtualEscape/Obstacle.png",//19
@@ -384,7 +384,7 @@ desc: [
         "Images/VirtualEscape/GameSceneManager.png",//13
         "Images/VirtualEscape/GameEventManager.png",//14
         "Images/VirtualEscape/GameEventInfo.png",//15
-        "Images/VirtualEscape/Sequenceabstract.png",//16
+        "Images/VirtualEscape/SequenceAbstract.png",//16
         "Images/VirtualEscape/DialogueSequence.png",//17
         "Images/VirtualEscape/Director.png",//18
         "Images/VirtualEscape/Obstacle.png",//19
