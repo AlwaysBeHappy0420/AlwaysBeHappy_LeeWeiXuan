@@ -134,7 +134,7 @@ document.addEventListener("keydown", (e) => {
 
 //set default language
 document.addEventListener("DOMContentLoaded", () => {
-  setLanguage("jp");
+  setLanguage("en");
 });
 
 mainBtn.addEventListener("click", () => {

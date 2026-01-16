@@ -411,6 +411,9 @@ const translations = {
       "<h3>Working Experiences:</h3><br>" +
       "- <i>Worked in <b>Inverse Atelier</b> as a <b>Game Programmer Intern</b> from June2025 to Oct2025</i>"
       +"<br><br><br>",
+      card01:"Studied at UTAR",
+      card02:"Internship at<br>Inverse Atelier",
+      card03:"Graduated from UTAR",
     about_desc3:
       "<h3>These describe me well:</h3> " +
       "<b><h4>Skillsets:</h4></b><br>" +
@@ -435,13 +438,13 @@ const translations = {
     contact_title: "Contact",
     WorkTitle:"Current Work",
     WorkContent:
-    "<b>Passed</b> - Unity Basics: Animator, C#Scripts, Basic Math implemented into Unity.<br>" +
-    "<b>Passed</b> - C/C++ basics, HTML, CSS, JavaScript, PHP, MySQL.<br>" +
-    "<b>Passed</b> - Animation Principles, Game Physics, DSA, Basic 3D Model.<br>" +
-    "<b>Passed</b> - UnrealEngine Blueprint, Mobile Game Development.<br>" +
-    "<b>Passed</b> - Design Pattern, Unity Renderer Feature basics, Shader Graph, AI for games.<br>" +
-    "<b>Passed</b> - Internship.<br>" +
-    "<b>On-Going</b> - Improving my skills on Unity HLSL, Renderer Feature, and UE C/C++"
+    '<img src="Images/tick.png" class="WorkContent-img"> Animator, C#Scripts, Basic Math in Unity.<br>' +
+    '<img src="Images/tick.png" class="WorkContent-img"> C/C++ basics, HTML, CSS, JavaScript, PHP, MySQL.<br>' +
+    '<img src="Images/tick.png" class="WorkContent-img"> Animation, DSA, 3D Modeling.<br>' +
+    '<img src="Images/tick.png" class="WorkContent-img"> UE Blueprint, Mobile Game Development.<br>' +
+    '<img src="Images/tick.png" class="WorkContent-img"> DesignPattern, RendererFeature Basics, ShaderGraph, GameAI.<br>' +
+    '<img src="Images/tick.png" class="WorkContent-img"> Internship.<br>' +
+    "<br><h3>On-Going</h3><br>Improving my skills on Unity HLSL, Renderer Feature, and UE C/C++"
   },
 
   zh: {
@@ -458,6 +461,9 @@ const translations = {
       "<h3>工作经历:</h3><br>" +
       "- <i>在<b>Inverse Atelier</b> 担任<b>实习游戏开发人员</b>，时期：2025年6月 至 2025年 10月</i>"
       +"<br><br><br>",
+      card01:"就读于UTAR",
+      card02:"在Inverse Atelier实习",
+      card03:"毕业于UTAR",
     about_desc3:
       "<h3>个人特质:</h3> " +
       "<b><h4>技能:</h4></b><br>" +
@@ -506,6 +512,10 @@ const translations = {
       "<h3>職務経歴:</h3><br>" +
       "- <i><b>Inverse Atelier</b> にて <b>ゲーム開発インターン</b> として勤務、期間：2025年6月 ～ 2025年10月</i>" +
       "<br><br><br>",
+card01: "UTARに在学",
+card02: "Inverse Atelierで<br>インターンシップ",
+card03: "UTARを卒業",
+
     about_desc3:
       "<h3>個人特質:</h3> " +
       "<b><h4>スキル:</h4></b><br>" +
