@@ -120,12 +120,10 @@ function openContent()
 }
 
 const cards = document.querySelectorAll(".project-card");
-const mainBtn = document.getElementById("mainBtn");
 const homepage = document.getElementById("homepage");
 const homepagePanel = document.getElementById("homepagePanel");
 const languageIcon = document.getElementById("languageIcon");
 const languageOptionBox = document.getElementById("languageOptionBox");
-const optionBox = document.getElementById("optionsBox");
 
 cards.forEach((card) => {
   card.addEventListener("mousemove", () => {
@@ -147,11 +145,6 @@ document.addEventListener("DOMContentLoaded", () => {
   setLanguage("en");
 });
 
-mainBtn.addEventListener("click", () => {
-  optionBox.classList.toggle("show");
-  if (languageOptionBox.classList.contains("show"))
-    languageOptionBox.classList.toggle("show");
-});
 
 homepage.addEventListener("click",()=>{
   homepagePanel.classList.toggle("show");
@@ -159,14 +152,13 @@ homepage.addEventListener("click",()=>{
 
 languageIcon.addEventListener("click", () => {
   languageOptionBox.classList.toggle("show");
-  if (optionBox.classList.contains("show")) optionBox.classList.toggle("show");
+  if (homepagePanel.classList.contains("show")) homepagePanel.classList.toggle("show");
 });
 
 window.addEventListener("scroll", handleScrollReveal);
 window.addEventListener("load", handleScrollReveal);
 
 window.addEventListener("scroll", () => {
-  if (optionBox.classList.contains("show")) optionBox.classList.toggle("show");
   if (languageOptionBox.classList.contains("show"))languageOptionBox.classList.toggle("show");
   if (homepagePanel.classList.contains("show")) homepagePanel.classList.toggle("show");
 

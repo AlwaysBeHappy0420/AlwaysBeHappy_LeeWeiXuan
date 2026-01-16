@@ -19,11 +19,12 @@
     <!-- Navigation -->
     <header>
       <nav class="navbar">
-        <button id="homepage"><img src="Images/homepage.png"></button>
         <h1 class="logo">Lee Wei Xuan</h1>
         <ul class="nav-links">
           <div class="lang-switcher">
-            <button class="mainBtn" id="mainBtn" data-key="info">Info</button>
+            <button class="languageIcon" id="homepage">
+              <img src="Images/homepage.png">
+            </button>
             <button class="languageIcon">
               <img id="languageIcon" src="Images/languageIcon.png" />
             </button>
@@ -100,6 +101,15 @@
       <p data-key="WorkContent"></p>
     </section>
 
+    <section id="PDFs" class="section reveal">
+      <h2>PDFs</h2>
+      <p >
+      <a href="PDFs/Resume_LeeWeiXuan_2025.pdf" target="_blank">Resume/CV</a><br><br>
+      <a href="PDFs/Rirekisho_LeeWeiXuan_2025.pdf" target="_blank">履歴書</a><br><br>
+      <a href="PDFs/ShokumuKeirekiSho_LeeWeiXuan_2025.pdf" target="_blank">職務経歴書</a>
+      </p>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="section reveal">
       <h2 data-key="contact_title">Contact</h2>
@@ -164,13 +174,14 @@
     </div>
 
     <div class="homepage" id="homepagePanel">
-<button onclick="location.href='#hero'">HomePage</button>
-<button onclick="location.href='#about'">About Me</button>
-<button onclick="location.href='#projects'">Projects</button>
-<button onclick="location.href='#currentWork'">Current Work</button>
-<button onclick="location.href='#contact'">Contact</button>
+<button onclick="location.href='#hero'" data-key="HomePage">HomePage</button>
+<button onclick="location.href='#about'" data-key="about_title">About Me</button>
+<button onclick="location.href='#projects'" data-key="projects_title">Projects</button>
+<button onclick="location.href='#currentWork'" data-key="WorkTitle">Current Work</button>
+<button onclick="location.href='#PDFs'">PDFs</button>
+<button onclick="location.href='#contact'" data-key="contact_title">Contact</button>
     </div>
 
-    <a href="#hero" class="back-to-top">⬆ Top</a> 
+    <a href="#homepage" class="back-to-top">⬆ Top</a> 
   </body>
 </html>

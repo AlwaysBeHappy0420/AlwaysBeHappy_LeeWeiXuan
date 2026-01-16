@@ -62,9 +62,7 @@ header {
   /* Ensure the border is inside the button dimensions */
   box-sizing: border-box !important;
 
-  /* Force the border visibility */
-  border: 2px solid #ffffff !important;
-  border-style: solid !important;
+  /* Force the border visibility *
 
   /* Give it some space so the border doesn't touch the text/image */
   padding-top: 15px;
@@ -481,7 +479,7 @@ footer p{
 .homepage{
   position: fixed;
   top: 60px; /* adjust position */
-  left: 10px;
+  right: 10px;
   width: 220px;
   background: #111;
   color: white;

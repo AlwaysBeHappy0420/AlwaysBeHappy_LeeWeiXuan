@@ -430,7 +430,8 @@ const translations = {
     '<img src="Images/tick.png" class="WorkContent-img"> UE Blueprint, Mobile Game Development.<br>' +
     '<img src="Images/tick.png" class="WorkContent-img"> DesignPattern, RendererFeature Basics, ShaderGraph, GameAI.<br>' +
     '<img src="Images/tick.png" class="WorkContent-img"> Internship.<br>' +
-    "<br><h3>On-Going</h3><br>Improving my skills on Unity HLSL, Renderer Feature, and UE C/C++"
+    "<br><h3>On-Going</h3><br>Improving my skills on Unity HLSL, Renderer Feature, and UE C/C++",
+        HomePage:"HomePage"
   },
 
   zh: {
@@ -480,8 +481,8 @@ const translations = {
     '<img src="Images/tick.png" class="WorkContent-img">虚幻引擎Blueprint，手机游戏开发。<br>' +
     '<img src="Images/tick.png" class="WorkContent-img">脚本设计模式，Unity Renderer Feature 基础，Shader Graph，游戏 AI。<br>' +
     '<img src="Images/tick.png" class="WorkContent-img">实习。<br>' +
-    "<br><h3>进行中</h3><br>目前正在提升 Unity HLSL、Renderer Feature 以及 UE C/C++ 的技能"
-
+    "<br><h3>进行中</h3><br>目前正在提升 Unity HLSL、Renderer Feature 以及 UE C/C++ 的技能",
+    HomePage:"主页"
   },
 
   jp: {
@@ -532,7 +533,7 @@ card03: "UTARを卒業",
     '<img src="Images/tick.png" class="WorkContent-img">UE Blueprint、モバイルゲーム開発。<br>' +
     '<img src="Images/tick.png" class="WorkContent-img">デザインパターン、Unity Renderer Feature 基礎、Shader Graph、ゲーム AI。<br>' +
     '<img src="Images/tick.png" class="WorkContent-img">インターンシップ。<br>' +
-    "<br><h3>進行中</h3><br>Unity HLSL、Renderer Feature、および UE C/C++ のスキル向上に取り組んでいます"
-
+    "<br><h3>進行中</h3><br>Unity HLSL、Renderer Feature、および UE C/C++ のスキル向上に取り組んでいます",
+    HomePage:"ホームページ"
   },
 };
