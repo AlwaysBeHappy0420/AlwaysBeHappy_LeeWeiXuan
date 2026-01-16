@@ -464,3 +464,7 @@ footer {
   cursor: pointer;
   color: #000000;
 }
+
+.WorkContent {
+  line-height: 1.4;
+}

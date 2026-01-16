@@ -47,7 +47,7 @@ desc: [
         "Images/AXERAS/AppearanceDataCode.png",
         "Images/AXERAS/MaterialChanged.png",
         "Images/AXERAS/UIworks.png",
-        "Images/AXERAS/MainMenuVideo.mp4",
+        "Images/AXERAS/MainMenu.mp4",
         "Images/AXERAS/HoverEffect.png",
         "Images/AXERAS/ResultScreenVideo.mp4",
         "Images/AXERAS/ResultScreen.png",
@@ -179,7 +179,7 @@ desc: [
         "Images/AXERAS/AppearanceDataCode.png",
         "Images/AXERAS/MaterialChanged.png",
         "Images/AXERAS/UIworks.png",
-        "Images/AXERAS/MainMenuVideo.mp4",
+        "Images/AXERAS/MainMenu.mp4",
         "Images/AXERAS/HoverEffect.png",
         "Images/AXERAS/ResultScreenVideo.mp4",
         "Images/AXERAS/ResultScreen.png",
@@ -311,7 +311,7 @@ desc: [
         "Images/AXERAS/AppearanceDataCode.png",
         "Images/AXERAS/MaterialChanged.png",
         "Images/AXERAS/UIworks.png",
-        "Images/AXERAS/MainMenuVideo.mp4",
+        "Images/AXERAS/MainMenu.mp4",
         "Images/AXERAS/HoverEffect.png",
         "Images/AXERAS/ResultScreenVideo.mp4",
         "Images/AXERAS/ResultScreen.png",
@@ -433,6 +433,15 @@ const translations = {
     project2_title: "Virtual Escape",
     project2_desc: "Final Year Project for UTAR 2025",
     contact_title: "Contact",
+    WorkTitle:"Current Work",
+    WorkContent:
+    "<b>Passed</b> - Unity Basics: Animator, C#Scripts, Basic Math implemented into Unity.<br>" +
+    "<b>Passed</b> - C/C++ basics, HTML, CSS, JavaScript, PHP, MySQL.<br>" +
+    "<b>Passed</b> - Animation Principles, Game Physics, DSA, Basic 3D Model.<br>" +
+    "<b>Passed</b> - Mobile Game Development.<br>" +
+    "<b>Passed</b> - Design Pattern, Unity Renderer Feature basics, Shader Graph, AI for games.<br>" +
+    "<b>Passed</b> - Internship.<br>" +
+    "<b>On-Going</b> - Now improving my skills on Unity HLSL, Renderer Feature, and UE C/C++"
   },
 
   zh: {
@@ -471,6 +480,16 @@ const translations = {
     project2_title: "Virtual Escape",
     project2_desc: "毕业前所制作的游戏",
     contact_title: "联系我",
+    WorkTitle:"当前进度",
+    WorkContent:
+    "<b>已学习</b> - Unity 基础：Animator，C# 脚本，基础数学在 Unity 中的应用。<br>" +
+    "<b>已学习</b> - C/C++ 基础，HTML，CSS，JavaScript，PHP，MySQL。<br>" +
+    "<b>已学习</b> - 动画原理，游戏物理，数据结构与算法，基础 3D 建模。<br>" +
+    "<b>已学习</b> - 手机游戏开发。<br>" +
+    "<b>已学习</b> - 脚本设计模式，Unity Renderer Feature 基础，Shader Graph，游戏 AI。<br>" +
+    "<b>已学习</b> - 实习。<br>" +
+    "<b>进行中</b> - 目前正在提升 Unity HLSL、Renderer Feature 以及 UE C/C++ 的技能"
+
   },
 
   jp: {
@@ -509,5 +528,15 @@ const translations = {
     project2_title: "Virtual Escape（ヴァーチャル・エスケープ）",
     project2_desc: "大学卒業前に制作したゲーム",
     contact_title: "連絡先",
+    WorkTitle:"現在の学習状況",
+    WorkContent:
+    "<b>勉強済み</b> - Unity 基礎：Animator、C# スクリプト、Unity における基礎数学の実装。<br>" +
+    "<b>勉強済み</b> - C/C++ 基礎、HTML、CSS、JavaScript、PHP、MySQL。<br>" +
+    "<b>勉強済み</b> - アニメーション原理、ゲーム物理、データ構造とアルゴリズム、基本的な 3D モデリング。<br>" +
+    "<b>勉強済み</b> - モバイルゲーム開発。<br>" +
+    "<b>勉強済み</b> - デザインパターン、Unity Renderer Feature 基礎、Shader Graph、ゲーム AI。<br>" +
+    "<b>勉強済み</b> - インターンシップ。<br>" +
+    "<b>進行中</b> - Unity HLSL、Renderer Feature、および UE C/C++ のスキル向上に取り組んでいます"
+
   },
 };
