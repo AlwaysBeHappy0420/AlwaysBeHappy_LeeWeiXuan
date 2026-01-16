@@ -407,7 +407,6 @@ const translations = {
       "・I love <b><i>Unreal</i></b> as well, not that much compared to Unity, but have experiences with <b><i>Blueprint</i></b> & <b><i>C/C++</i></b>.<br><br>" +
       "・I <b><i>make websites</i></b>. Not very detailed, but enough to show what I want to show. Using languages like: <b><i>JavaScript, HTML, CSS, php, MySQL...</i></b><br><br>" +
       "・I love & hate <b><i>Dev Logging</i></b>. Don't get me wrong. I'm good at concluding things. It just takes me a lot of time.<br><br>" +
-      "・<b><i>Communicating</i></b> is a skill. TBH, I'm not good at this because of most of the time I would prefer solve it by myself first, and in the end I can solve it by myself.<br><br>" +
       "・Learned <b><i>Japanese(N1). Native in English, Chinese(Simplified/Traditional), Malay, Hakka, Cantonese, some Hokkien.</i></b><br><br><br>",
     about_desc4:
       "<b><h4>Mindset:</h4></b><br>" +
@@ -458,7 +457,6 @@ const translations = {
       "・有使用<b><i>虚幻引擎(Unreal Engine)</i></b> 的经验, 可使用<b><i>Blueprint</i></b> & <b><i>C/C++</i></b>进行游戏开发。<br><br>" +
       "・有制作 <b><i>个人网站</i></b>的经验。熟悉使用以下语言： <b><i>JavaScript, HTML, CSS, php, MySQL...</i></b><br><br>" +
       "・熟悉写<b><i>开发日志</i></b>。<br><br>" +
-      "・不擅长与人进行口头表达上的<b><i>沟通</i></b>，但文字表达上相对流畅。<br><br>" +
       "・获得<b><i>日语(N1)准证. 母语为英文，中文（简体/繁体），马来文，客家语，粤语，一部分福建话（闽南语）</i></b><br><br><br>",
     about_desc4:
       "<b><h4>个人思想:</h4></b><br>" +
@@ -510,7 +508,6 @@ card03: "UTARを卒業",
       "・<b><i>Unreal Engine</i></b> の使用経験があり、<b><i>Blueprint</i></b> および <b><i>C/C++</i></b> を用いたゲーム開発が可能です。<br><br>" +
       "・<b><i>個人サイト</i></b> の制作経験があります。以下の言語の使用に精通しています： <b><i>JavaScript, HTML, CSS, php, MySQL...</i></b><br><br>" +
       "・<b><i>開発ログ</i></b> の作成に慣れています。<br><br>" +
-      "・口頭での<b><i>コミュニケーション</i></b>はあまり得意ではありませんが、文章での表現は比較的得意です。<br><br>" +
       "・<b><i>日本語(N1)資格取得。母語は英語、中国語（簡体字／繁体字）、マレー語、客家語、広東語、一部福建語（閩南語）</i></b><br><br><br>",
     about_desc4:
       "<b><h4>個人の考え:</h4></b><br>" +
