@@ -2,7 +2,7 @@ const projectLanguage = {
   en: {
     AXERAS: {
       title: '<strong id="top">AXERAS</strong>',
-      projectDesc: ' <a href="https://store.steampowered.com/app/3873770/AXERAS/" target="_blank">AXERAS</a> is a turn-based tactical military SRPG developed by <a href="https://x.com/InverseAtelier" target="_blank">Inverse Atelier</a>.'
+      projectDesc: 'AXERASis a turn-based tactical military SRPG developed by <a href="https://x.com/InverseAtelier" target="_blank">Inverse Atelier</a>.'
       +"<br>This project is heavily relying on AI movement where <a>GOAP</a> is implemented."
       +"<br><br>"
       +'<h4>My tasks:</h4><div>'
@@ -12,6 +12,11 @@ const projectLanguage = {
       +"<br>· Created <a>flexible AI control functions</a>"
       +"<br>· Created function to change Apperance Data for different models"
       +"<br>· Others: Voice-lines scripts/ Debugging/ Translation etc.</div>"
+      +"<br>"
+      +"<br>"
+      +"<br>"
+      +'<a href="https://store.steampowered.com/app/3873770/AXERAS/" target="_blank">Steam Page</a>'
+      +"<br>"
       +"<br>"
       +'<div class="overlay-content-attention">*ATTENTION: I cannot share original works here due to contract issue. Below are summarized version.</div>'
       +"<br><br>"
@@ -52,7 +57,7 @@ desc: [
     VirtualEscape: {
       title: '<strong id="top">VirtualEscape</strong>',
       projectDesc:
-      '<a href="https://alwaysbehappy.itch.io/virtual-escape" target="_blank">Virtual Escape</a> is a 2D puzzle-platformer, '
+      'Virtual Escape is a 2D puzzle-platformer, '
       +'where players use corpses to solve puzzles.'
       +'<br>This project was my <a>Final Year Project (FYP)</a> completed within <a>12 weeks</a>.'
       +'<br>My role in this project was the <a>sole Game Programmer</a>.'
@@ -64,13 +69,15 @@ desc: [
       +"<br>· Visual Effects Design: <a>Lighting, PostProcessing, ParticleSystem</a>, etc."
       +"<br>· <a>Code-based Cutscene & Animation</a>"
       +"<br>· Others: SaveSystem, EventSystem, CameraMovement in Math, etc.</div>"
+      +"<br><br>"
+      +'<a href="https://alwaysbehappy.itch.io/virtual-escape" target="_blank">Playable Game Page</a><br>'
+      +'<a href="https://github.com/AlwaysBeHappy0420/VirtualEscape_FYP2025" target="_blank">Github Source Code File Page</a>'
       +"<br><br><br>"
       +"<h4>Intro:</h4>"
       +'<br><div>This project codebase follows <i><b class="overlay-content-ap">Singleton, Abstract Factory, Observer, Dependency Injection</b></i> etc. '
       +'<br>It follows principles like <i><b class="overlay-content-ap">SOLID, MVP</b></i> etc. as well.'
       +'<br>Due to <i><b class="overlay-content-ap">Time Constraints</b></i>, some parts have been hard-coded to meet the deadline.'
       +'<br>Improvements can be made if I have had more time.</div>'
-      +'<br><a href="https://github.com/AlwaysBeHappy0420/VirtualEscape_FYP2025" target="_blank">Detailed Version</a> is in my Github, Feel free to check out.</div>'
       +'<br><br><br><a href="#Code">Bring me to development part</a>'
       ,
 desc: [
@@ -127,7 +134,7 @@ desc: [
   zh: {
     AXERAS: {
       title: '<strong id="top">AXERAS</strong>',
-      projectDesc:' <a href="https://store.steampowered.com/app/3873770/AXERAS/" target="_blank">AXERAS</a> 是一款由<a href="https://x.com/InverseAtelier" target="_blank">Inverse Atelier</a>开发的回合制战术军事类 SRPG。'
+      projectDesc:'AXERAS 是一款由<a href="https://x.com/InverseAtelier" target="_blank">Inverse Atelier</a>开发的回合制战术军事类 SRPG。'
       +"<br>本项目高度依赖 AI 行动系统，并且依靠 <a>GOAP</a>来完成基本的AI指令。"
       +"<br><br>"
       +'<h4>工作内容：</h4><div>'
@@ -137,6 +144,11 @@ desc: [
       +"<br>· 创建 <a>灵活的 AI 控制函数</a>"
       +"<br>· 创建用于更换不同模型外观数据的功能"
       +"<br>· 其他：语音脚本 / 调试 / 翻译 等</div>"
+      +"<br>"
+      +"<br>"
+      +"<br>"
+      +'<a href="https://store.steampowered.com/app/3873770/AXERAS/" target="_blank">Steam页面</a>'
+      +"<br>"
       +"<br>"
       +'<div class="overlay-content-attention">*注意：由于合约限制，我无法在此展示原始内容。以下为总结版本。</div>'
       +"<br><br>"
@@ -191,13 +203,15 @@ desc: [
       +"<br>· 视觉效果设计：<a>光照、后处理、粒子系统</a> 等"
       +"<br>· <a>基于代码的过场动画与角色动画</a>"
       +"<br>· 其他：存档系统、事件系统、基于数学的摄像机控制 等</div>"
+      +"<br><br>"
+      +'<a href="https://alwaysbehappy.itch.io/virtual-escape" target="_blank">实际游戏页面</a><br>'
+      +'<a href="https://github.com/AlwaysBeHappy0420/VirtualEscape_FYP2025" target="_blank">Github源代码</a>'
       +"<br><br><br>"
       +"<h4>简介：</h4>"
       +'<br><div>本项目的代码架构采用了 <i><b class="overlay-content-ap">Singleton、Abstract Factory、Observer、Dependency Injection</b></i> 等设计模式。'
       +'<br>同时也遵循了 <i><b class="overlay-content-ap">SOLID 原则、MVP 架构</b></i> 等软件设计理念。'
       +'<br>由于 <i><b class="overlay-content-ap">时间限制</b></i>，部分内容为了赶进度而采用了硬编码方式实现。'
       +'<br>如果有更多时间，该项目仍有进一步优化与改进的空间。</div>'
-      +'<br><a href="https://github.com/AlwaysBeHappy0420/VirtualEscape_FYP2025" target="_blank">详细版本</a>在Github中。请随意查看。</div>'
       +'<br><br><br><a href="#Code">到游戏开发部分</a>'
       ,
 desc: [
@@ -254,7 +268,7 @@ desc: [
   jp: {
     AXERAS: {
       title: '<strong id="top">AXERAS</strong>',
-      projectDesc: ' <a href="https://store.steampowered.com/app/3873770/AXERAS/" target="_blank">AXERAS</a> は、<a href="https://x.com/InverseAtelier" target="_blank">Inverse Atelier</a>が開発しているターン制タクティカル・ミリタリー系SRPGです。'
+      projectDesc: 'AXERAS は、<a href="https://x.com/InverseAtelier" target="_blank">Inverse Atelier</a>が開発しているターン制タクティカル・ミリタリー系SRPGです。'
       +"<br>本プロジェクトでは<a> GOAP</a> を実装して、AIの行動ロジックが中核となっております。"
       +"<br><br>"
       +'<h4>担当業務：</h4><div>'
@@ -264,6 +278,11 @@ desc: [
       +"<br>· <a>柔軟性の高いAI制御関数の作成</a>"
       +"<br>· 各モデルに対応した外観データ切り替え機能の実装"
       +"<br>· その他：ボイス関連スクリプト作成 / デバッグ / 翻訳 など</div>"
+      +"<br>"
+      +"<br>"
+      +"<br>"
+      +'<a href="https://store.steampowered.com/app/3873770/AXERAS/" target="_blank">Steam画面へ</a>'
+      +"<br>"
       +"<br>"
       +'<div class="overlay-content-attention">※注意：契約上の理由により、原作業物を公開することはできません。以下は内容を要約したものです。</div>'
       +"<br><br>"
@@ -319,13 +338,15 @@ desc: [
       +"<br>· ビジュアルエフェクト設計：<a>ライティング、ポストプロセッシング</a> 等"
       +"<br>· <a>コードによるカットシーン・アニメーション</a>"
       +"<br>· その他：セーブシステム、イベントシステム、カメラ制御 等</div>"
+      +"<br><br>"
+      +'<a href="https://alwaysbehappy.itch.io/virtual-escape" target="_blank">ゲームへ</a><br>'
+      +'<a href="https://github.com/AlwaysBeHappy0420/VirtualEscape_FYP2025" target="_blank">Githubページへ</a>'
       +"<br><br><br>"
       +"<h4>技術概要：</h4>"
       +'<br><div>本プロジェクトでは、<i><b class="overlay-content-ap">Singleton、Abstract Factory、Observer、Dependency Injection</b></i> <br>などのデザインパターンを適用しています。'
       +'<br><br>さらに、<i><b class="overlay-content-ap">SOLID原則、MVPアーキテクチャ</b></i> などのソフトウェア設計原則に従い、<br>保守性・拡張性の高いコードを構築しました。'
       +'<br><br>限られた <i><b class="overlay-content-ap">開発期間</b></i> の中で、一部は進捗優先でハードコーディングしていますが、'
       +'<br>時間があればさらなる改善・最適化が可能です。</div>'
-      +'<br><a href="https://github.com/AlwaysBeHappy0420/VirtualEscape_FYP2025" target="_blank">詳細なバージョン</a>はGitHubにあります。ぜひご覧ください。</div>'
       +'<br><br><br><a href="#Code">ゲーム開発の詳細へ</a>'
       ,
 
