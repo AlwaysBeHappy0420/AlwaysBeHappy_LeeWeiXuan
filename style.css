@@ -36,6 +36,7 @@ header {
 }
 
 
+
 .mainBtn {
   /* Ensure the border is inside the button dimensions */
   box-sizing: border-box !important;
@@ -142,6 +143,16 @@ header img {
   text-align: left;
   font-size: 32px;
   margin-bottom: 20px;
+}
+
+.section video{
+  width: 75%;
+  max-width: 800px;
+}
+
+.section-centerized{
+    display: flex;
+    justify-content: center;
 }
 
 /* Project Grid */
