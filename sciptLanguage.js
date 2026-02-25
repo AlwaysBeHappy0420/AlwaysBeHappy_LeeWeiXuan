@@ -443,7 +443,7 @@ const translations = {
     project2_desc: "Final Year Project for UTAR 2025",
     contact_title: "Contact",
     WorkTitle:"Current Work",
-    WorkDescription:"Unity Custom Shader for Moving Grass (Updated 11/02/2025)",
+    WorkDescription:"Unity Custom Shader for Moving Grass (Updated 20/02/2025)",
     WorkContent:
     '<img src="Images/tick.png" class="WorkContent-img"> Animator, C#Scripts, Basic Math in Unity.<br>' +
     '<img src="Images/tick.png" class="WorkContent-img"> C/C++ basics, HTML, CSS, JavaScript, PHP, MySQL.<br>' +
@@ -494,7 +494,7 @@ const translations = {
     project2_desc: "毕业前所制作的游戏",
     contact_title: "联系我",
     WorkTitle:"当前进度",
-    WorkDescription:"通过 Unity自制的Shader来达成摇曳状态的草（更新于 11/02/2025）",
+    WorkDescription:"通过 Unity自制的Shader来达成摇曳状态的草（更新于 20/02/2025）",
     WorkContent:
     '<img src="Images/tick.png" class="WorkContent-img">Unity 基础：Animator，C# 脚本，基础数学在 Unity 中的应用。<br>' +
     '<img src="Images/tick.png" class="WorkContent-img">C/C++ 基础，HTML，CSS，JavaScript，PHP，MySQL。<br>' +
@@ -546,7 +546,7 @@ card03: "UTARを卒業",
     project2_desc: "大学卒業前に制作したゲーム",
     contact_title: "連絡先",
     WorkTitle:"現在の学習状況",
-    WorkDescription:"Unityにおける草の動きを表現するカスタムシェーダー（2025年2月11日 更新）",
+    WorkDescription:"Unityにおける草の動きを表現するカスタムシェーダー（2025年2月20日 更新）",
     WorkContent:
     '<img src="Images/tick.png" class="WorkContent-img">Unity 基礎：Animator、C# スクリプト、Unity における基礎数学の実装。<br>' +
     '<img src="Images/tick.png" class="WorkContent-img">C/C++ 基礎、HTML、CSS、JavaScript、PHP、MySQL。<br>' +
